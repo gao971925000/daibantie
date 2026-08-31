@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>待办 DeskTodo —— 把待办贴在桌面上 · 下载官网</title>
+  <meta name="description" content="DeskTodo 是一款贴靠 Windows 桌面的本地待办、日历与便签工具。轻巧、安静，数据只留在你自己的电脑里。立即下载 Windows 桌面版。" />
+  <link rel="icon" href="assets/app-icon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+
+  <!-- ===== 顶部导航 ===== -->
+  <header class="nav" id="top">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <img src="assets/app-icon.svg" alt="DeskTodo 图标" width="34" height="34" />
+        <span class="brand-name">待办 <small>DeskTodo</small></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#features">功能特性</a>
+        <a href="#preview">界面预览</a>
+        <a href="#download">下载</a>
+      </nav>
+      <a class="btn btn-primary btn-sm nav-cta" href="#download" data-download>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 3v10m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        下载 Windows 版
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> Windows · 本地桌面应用 · 免费</span>
+        <h1>把待办，<br />贴在<span class="accent">桌面</span>上。</h1>
+        <p class="lead">DeskTodo 是一款贴靠 Windows 桌面的本地待办、日历与便签工具。轻巧、安静，数据只留在你自己的电脑里。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="download/DeskTodo-Setup.exe" download data-download>
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 3v10m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            下载 Windows 版
+          </a>
+          <a class="btn btn-ghost btn-lg" href="#features">了解功能</a>
+        </div>
+        <div class="hero-meta">
+          <span><b>Windows 10 / 11</b>（64 位）</span>
+          <span class="sep"></span>
+          <span><b>免费</b> · 数据本地保存</span>
+          <span class="sep"></span>
+          <span><b>2.55 MB</b> 安装包</span>
+        </div>
+      </div>
+
+      <div class="hero-shot">
+        <div class="shot-frame reveal">
+          <div class="shot-window">
+            <div class="shot-titlebar" aria-hidden="true">
+              <span class="traffic"><i></i><i></i><i></i></span>
+              <span class="shot-title">待办 DeskTodo · 桌面</span>
+            </div>
+            <img src="assets/screenshots/app-hero.png" alt="DeskTodo 屏幕截图" loading="eager" />
+          </div>
+        </div>
+        <span class="shot-caption">贴靠屏幕右侧，自动收起 · 数据本地保存</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 功能特性 ===== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">功能特性</span>
+        <h2>一个面板，管好今天的每一件事</h2>
+        <p>待办、日历与便签共用一扇贴靠桌面的小窗，轻而不散。</p>
+      </div>
+      <div class="features-grid">
+        <article class="feature-card reveal">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16M8 3v3M16 3v3M8 21v-3M16 21v-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <h3>今天 / 本周 / 本月</h3>
+          <p>周历、月历与完成进度一屏可见，今天还剩几件，心里有数。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-4 3v-3H4V5Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M9 10h6M9 12.5h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+          <h3>自然语言输入</h3>
+          <p>写下「明天下午 3 点交方案」，自动识别日期与提醒，回车即建。</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>提醒中心</h3>
+          <p>面板提醒与系统通知二选一，稍后提醒不丢失。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 界面预览 ===== -->
+  <section class="section section-alt" id="preview">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">界面预览</span>
+        <h2>干净、安静的桌面一角</h2>
+        <p>暖陶土配色 + 柔和米底，贴靠桌面后像是长在那里的一样。</p>
+      </div>
+      <div class="preview-grid">
+        <figure class="shot-card reveal big">
+          <div class="shot-window">
+            <div class="shot-titlebar"><span class="traffic"><i></i><i></i><i></i></span><span class="shot-title">今日待办</span></div>
+            <img src="assets/screenshots/app-today.png" alt="今日待办视图" loading="lazy" />
+          </div>
+          <figcaption>今日视图 —— 进度条、标签与截止一览</figcaption>
+        </figure>
+        <figure class="shot-card reveal">
+          <div class="shot-window">
+            <div class="shot-titlebar"><span class="traffic"><i></i><i></i><i></i></span><span class="shot-title">本周</span></div>
+            <img src="assets/screenshots/shot-week.png" alt="本周视图" loading="lazy" />
+          </div>
+          <figcaption>本周视图 —— 周历与进度</figcaption>
+        </figure>
+        <figure class="shot-card reveal">
+          <div class="shot-window">
+            <div class="shot-titlebar"><span class="traffic"><i></i><i></i><i></i></span><span class="shot-title">便签</span></div>
+            <img src="assets/screenshots/shot-notes.png" alt="便签视图" loading="lazy" />
+          </div>
+          <figcaption>便签 —— 连续纸面直接书写</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 下载 ===== -->
+  <section class="section download" id="download">
+    <div class="container">
+      <div class="download-card reveal">
+        <div class="download-copy">
+          <span class="eyebrow light">立即开始</span>
+          <h2>现在下载 DeskTodo</h2>
+          <p>Windows 10 / 11（64 位）。免费下载，本地安装，数据保存在你自己的电脑。</p>
+          <ul class="dl-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 本地安装，数据保存在你自己的电脑</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 托盘常驻，全局快捷键随手唤起</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 12 2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> 支持自动备份与一键恢复</li>
+          </ul>
+        </div>
+        <div class="download-cta">
+          <a class="btn btn-light btn-xl" id="downloadBtn" href="download/DeskTodo-Setup.exe" download>
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 3v10m0 0 4-4m-4 4-4-4M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="btn-main">下载 Windows 版</span>
+            <span class="btn-sub">DeskTodo-Setup.exe · v2.0.0-alpha.23 · 2.55 MB</span>
+          </a>
+          <div class="dl-note">下载后双击运行即可安装，几秒完成。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top">
+        <img src="assets/app-icon.svg" alt="DeskTodo 图标" width="28" height="28" />
+        <span class="brand-name">待办 <small>DeskTodo</small></span>
+      </a>
+      <p>本地待办 · 日历 · 便签 —— 把每件事都放在看得见的地方。</p>
+      <p class="copyright">© 2026 DeskTodo · 数据默认保存在你的电脑。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
