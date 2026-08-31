@@ -4,9 +4,16 @@
       <stop offset="0" stop-color="#F39A70"/>
       <stop offset="1" stop-color="#DF5F39"/>
     </linearGradient>
+    <linearGradient id="note" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFDF8"/>
+      <stop offset="1" stop-color="#FFF3E3"/>
+    </linearGradient>
   </defs>
   <rect x="64" y="64" width="896" height="896" rx="224" fill="url(#warm)"/>
-  <path d="M246 176h402l148 148v470c0 31-25 56-56 56H246c-31 0-56-25-56-56V232c0-31 25-56 56-56Z" fill="#FFF9F2"/>
-  <path d="M648 176v104c0 24 20 44 44 44h104Z" fill="#F4D6C5"/>
-  <path d="m322 526 112 112 246-250" fill="none" stroke="#D95B38" stroke-width="78" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="230" y="250" width="640" height="592" rx="44" fill="#B94A26" opacity="0.16"/>
+  <rect x="206" y="222" width="640" height="592" rx="44" fill="url(#note)"/>
+  <path d="M846 654v160h-160z" fill="#F0DDC2"/>
+  <path d="m336 544 126 128 260-272" fill="none" stroke="#D95B38" stroke-width="84" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="512" cy="296" r="52" fill="#C94F2E"/>
+  <circle cx="496" cy="278" r="15" fill="#F7B18C" opacity="0.9"/>
 </svg>
