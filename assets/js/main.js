@@ -52,4 +52,19 @@
       setTimeout(function () { btn.classList.remove("downloading"); }, 900);
     });
   });
+
+  /* 发布脚本写入 latest.json；读取失败时保留页面内的兜底文案。 */
+  var releaseSize = document.querySelector("[data-release-size]");
+  if (releaseSize && "fetch" in window) {
+    fetch("download/latest.json", { cache: "no-store" })
+      .then(function (response) {
+        if (!response.ok) { throw new Error("release metadata unavailable"); }
+        return response.json();
+      })
+      .then(function (release) {
+        if (typeof release.fileSizeBytes !== "number" || release.fileSizeBytes <= 0) { return; }
+        releaseSize.textContent = (release.fileSizeBytes / 1024 / 1024).toFixed(2) + " MB";
+      })
+      .catch(function () { /* 首次正式发布前没有 latest.json，静默使用兜底体积。 */ });
+  }
 })();
