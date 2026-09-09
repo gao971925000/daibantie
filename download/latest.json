@@ -1,0 +1,11 @@
+{
+  "version": "1.0.0",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.0/Daibantie-v1.0.0-x64-setup.exe",
+  "sha256": "af656f4b0d5d3fb40bed36d830468fe1fa022dc974a4b86728e145ce4eced982",
+  "fileSizeBytes": 2770757,
+  "publishedAt": "2026-09-09T05:56:34.6127488+00:00",
+  "sourceCommit": "c5c631d4af275cb180ddf383c0a393acfa13ab69",
+  "notes": [
+    "升级登录、外观、便签与输入控件体验"
+  ]
+}
