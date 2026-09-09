@@ -1,11 +1,11 @@
 {
-  "version": "1.0.0",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.0/Daibantie-v1.0.0-x64-setup.exe",
-  "sha256": "af656f4b0d5d3fb40bed36d830468fe1fa022dc974a4b86728e145ce4eced982",
-  "fileSizeBytes": 2770757,
-  "publishedAt": "2026-09-09T05:56:34.6127488+00:00",
-  "sourceCommit": "c5c631d4af275cb180ddf383c0a393acfa13ab69",
+  "version": "1.0.1",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.1/Daibantie-v1.0.1-x64-setup.exe",
+  "sha256": "8e50e665d0e444e2ffdd25674a5c3aa59bb0a9e82a6b9bbf92e26d724b971d76",
+  "fileSizeBytes": 2772033,
+  "publishedAt": "2026-09-09T10:42:55.2564673+00:00",
+  "sourceCommit": "97cc71b9228883b689fd8d902c41ab3e8f53f068",
   "notes": [
-    "升级登录、外观、便签与输入控件体验"
+    "修复升级状态误报，安全迁移旧测试版待办数据，并优化关于与应用更新页面"
   ]
 }
