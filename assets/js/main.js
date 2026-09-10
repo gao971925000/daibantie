@@ -1,70 +1,39 @@
-/* 待办 DeskTodo · 下载官网 —— 交互脚本 */
 (function () {
   "use strict";
-
-  /* 移动端导航开关 */
   var toggle = document.getElementById("navToggle");
-  var links = document.getElementById("navLinks");
-  if (toggle && links) {
-    toggle.addEventListener("click", function (e) {
-      e.stopPropagation();
-      var open = links.classList.toggle("open");
-      toggle.setAttribute("aria-expanded", open ? "true" : "false");
-    });
-    document.addEventListener("click", function () {
-      if (links.classList.contains("open")) {
-        links.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      }
-    });
-    /* 点导航链接后收起 */
-    links.querySelectorAll("a").forEach(function (a) {
-      a.addEventListener("click", function () {
-        links.classList.remove("open");
-        toggle.setAttribute("aria-expanded", "false");
-      });
-    });
+  var nav = document.getElementById("siteNav");
+  function closeNav() {
+    if (!toggle || !nav) return;
+    nav.classList.remove("open"); toggle.classList.remove("open");
+    toggle.setAttribute("aria-expanded", "false"); toggle.setAttribute("aria-label", "打开导航菜单");
   }
-
-  /* 滚动显现 */
-  var revealEls = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.14 });
-    revealEls.forEach(function (el, i) {
-      el.style.transitionDelay = (i % 3) * 0.07 + "s";
-      io.observe(el);
+  if (toggle && nav) {
+    toggle.addEventListener("click", function (event) {
+      event.stopPropagation(); var opening = !nav.classList.contains("open"); closeNav();
+      if (opening) { nav.classList.add("open"); toggle.classList.add("open"); toggle.setAttribute("aria-expanded", "true"); toggle.setAttribute("aria-label", "关闭导航菜单"); }
     });
-  } else {
-    revealEls.forEach(function (el) { el.classList.add("in"); });
+    nav.querySelectorAll("a").forEach(function (link) { link.addEventListener("click", closeNav); });
+    document.addEventListener("click", closeNav);
+    document.addEventListener("keydown", function (event) { if (event.key === "Escape") closeNav(); });
   }
-
-  /* 下载按钮的轻量反馈（该页为静态下载链接，仅记录一次交互） */
-  document.querySelectorAll("[data-download]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      btn.classList.add("downloading");
-      setTimeout(function () { btn.classList.remove("downloading"); }, 900);
-    });
+  var revealItems = document.querySelectorAll(".reveal");
+  var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!reducedMotion && "IntersectionObserver" in window) {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add("in"); observer.unobserve(entry.target); } });
+    }, { rootMargin: "0px 0px -8%", threshold: 0.08 });
+    revealItems.forEach(function (item) { observer.observe(item); });
+  } else { revealItems.forEach(function (item) { item.classList.add("in"); }); }
+  document.querySelectorAll("[data-download]").forEach(function (link) {
+    link.addEventListener("click", function () { link.classList.add("is-downloading"); window.setTimeout(function () { link.classList.remove("is-downloading"); }, 900); });
   });
-
-  /* 发布脚本写入 latest.json；读取失败时保留页面内的兜底文案。 */
-  var releaseSize = document.querySelector("[data-release-size]");
-  if (releaseSize && "fetch" in window) {
-    fetch("download/latest.json", { cache: "no-store" })
-      .then(function (response) {
-        if (!response.ok) { throw new Error("release metadata unavailable"); }
-        return response.json();
-      })
-      .then(function (release) {
-        if (typeof release.fileSizeBytes !== "number" || release.fileSizeBytes <= 0) { return; }
-        releaseSize.textContent = (release.fileSizeBytes / 1024 / 1024).toFixed(2) + " MB";
-      })
-      .catch(function () { /* 首次正式发布前没有 latest.json，静默使用兜底体积。 */ });
-  }
+  fetch("download/latest.json", { cache: "no-store" }).then(function (response) {
+    if (!response.ok) throw new Error("release metadata unavailable"); return response.json();
+  }).then(function (release) {
+    if (typeof release.version === "string" && /^\d+\.\d+\.\d+$/.test(release.version)) document.querySelectorAll("[data-release-version]").forEach(function (node) { node.textContent = "v" + release.version; });
+    if (typeof release.fileSizeBytes === "number" && release.fileSizeBytes > 0) {
+      var size = (release.fileSizeBytes / 1024 / 1024).toFixed(2) + " MB";
+      document.querySelectorAll("[data-release-size]").forEach(function (node) { node.textContent = size; });
+    }
+  }).catch(function () { /* 保留页面中的版本兜底信息。 */ });
 })();
