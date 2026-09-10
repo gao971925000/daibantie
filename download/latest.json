@@ -1,11 +1,14 @@
 {
-  "version": "1.0.1",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.1/Daibantie-v1.0.1-x64-setup.exe",
-  "sha256": "8e50e665d0e444e2ffdd25674a5c3aa59bb0a9e82a6b9bbf92e26d724b971d76",
-  "fileSizeBytes": 2772033,
-  "publishedAt": "2026-09-09T10:42:55.2564673+00:00",
-  "sourceCommit": "97cc71b9228883b689fd8d902c41ab3e8f53f068",
+  "version": "1.0.4",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.4/Daibantie-v1.0.4-x64-setup.exe",
+  "sha256": "003e179f7c573f62a7c07f3c4a8edfbb056c2246b94b75e87c3f1cb67e86b949",
+  "fileSizeBytes": 2778462,
+  "publishedAt": "2026-09-10T05:46:52.9194527+00:00",
+  "sourceCommit": "94c34c1e8cca6ea565d68676f0090ab88e0213d3",
   "notes": [
-    "修复升级状态误报，安全迁移旧测试版待办数据，并优化关于与应用更新页面"
+    "设置中的更新内容改为逐项展示，重点更清晰",
+    "修复设置等弹窗在侧边透明区域被裁切的问题",
+    "新增独立账户设置页，并优化手机号换绑流程与界面",
+    "优化登录校验、已完成待办样式与列表分组体验"
   ]
 }
