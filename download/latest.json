@@ -1,14 +1,14 @@
 {
-  "version": "1.0.5",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.5/Daibantie-v1.0.5-x64-setup.exe",
-  "sha256": "c0bf92dbdf707cdecde2688951fabc1f07e82e9d499663e76debb4f7c33d99ad",
-  "fileSizeBytes": 2779655,
-  "publishedAt": "2026-09-10T09:03:14.9649027+00:00",
-  "sourceCommit": "32c29ed08c68e7eb6d939b3c5407bd73d41244fe",
+  "version": "1.0.7",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.7/Daibantie-v1.0.7-x64-setup.exe",
+  "sha256": "85a78388c55d2eb744829be48164cb8fa3a414aabccfae6630e809e735984e6a",
+  "fileSizeBytes": 2779389,
+  "publishedAt": "2026-09-10T09:58:43.7213229+00:00",
+  "sourceCommit": "fced66f2a08f86adc7dbae24be4733ad3c190228",
   "notes": [
-    "修复旧版升级后未提示恢复待办的问题",
-    "已有账号数据空间也能重新发现并安全合并旧数据",
-    "迁移前自动备份新旧数据，并防止跨账号误迁移",
-    "修复部分主题无法切换及侧边页签残影问题"
+    "修复点击桌面或主面板时左侧页签出现白色遮挡块的问题",
+    "移除主面板常驻的 Windows 隐藏缩放边框",
+    "保留面板缩放功能，缩放结束后自动恢复无边框状态",
+    "完善旧版数据识别与恢复流程，降低升级后待办不可见风险"
   ]
 }
