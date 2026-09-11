@@ -1,14 +1,14 @@
 {
-  "version": "1.0.7",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.7/Daibantie-v1.0.7-x64-setup.exe",
-  "sha256": "85a78388c55d2eb744829be48164cb8fa3a414aabccfae6630e809e735984e6a",
-  "fileSizeBytes": 2779389,
-  "publishedAt": "2026-09-10T09:58:43.7213229+00:00",
-  "sourceCommit": "fced66f2a08f86adc7dbae24be4733ad3c190228",
+  "version": "1.0.8",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.8/Daibantie-v1.0.8-x64-setup.exe",
+  "sha256": "ba845d04ee5cd67aa9bca5b625c52b1ea67c36f098b134cbc76f2c84d0f1f153",
+  "fileSizeBytes": 2780411,
+  "publishedAt": "2026-09-11T08:02:06.8766804+00:00",
+  "sourceCommit": "ad637d8eafb15b6e6c5965a6fadeed1aecd565ca",
   "notes": [
-    "修复点击桌面或主面板时左侧页签出现白色遮挡块的问题",
-    "移除主面板常驻的 Windows 隐藏缩放边框",
-    "保留面板缩放功能，缩放结束后自动恢复无边框状态",
-    "完善旧版数据识别与恢复流程，降低升级后待办不可见风险"
+    "修复反馈含截图时无法上传、只能保存在本地的问题",
+    "增加反馈处理进度与后台回复查看，便于持续跟进反馈",
+    "完善离线反馈队列，恢复网络后可自动重试且不会重复提交",
+    "更新官网产品截图，侧边区域只保留真实页签"
   ]
 }
