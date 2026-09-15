@@ -1,14 +1,14 @@
 {
-  "version": "1.0.9",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.9/Daibantie-v1.0.9-x64-setup.exe",
-  "sha256": "36602b34fae7b99d026318b84cd9c68dc23254394030567eef206ab2b9f2a514",
-  "fileSizeBytes": 2789804,
-  "publishedAt": "2026-09-15T01:58:49.3180200+00:00",
-  "sourceCommit": "ebf43a9d99f864197970336fed5f14400e5cfbaf",
+  "version": "1.0.10",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.10/Daibantie-v1.0.10-x64-setup.exe",
+  "sha256": "a7e10f5182636003588ee346a862ca40d3be8bf47d1fc8e08b4fea501ea21b43",
+  "fileSizeBytes": 2802247,
+  "publishedAt": "2026-09-15T14:45:50.2239439+00:00",
+  "sourceCommit": "1dcbabf101309740cab47ea12c5b3a17395456f2",
   "notes": [
-    "优化消息中心与反馈沟通，支持图文回复和未读提醒",
-    "优化待办列表、标签管理与设为今天操作",
-    "修复页签悬浮说明、面板收起拖动及图片预览问题",
-    "统一界面样式并提升稳定性"
+    "重点优化三种贴边方案：右侧保留页签、右侧完全隐藏、顶部完全隐藏，可在设置「贴边」中自由选择。",
+    "优化贴边交互：手动拖到对应屏幕边缘后自动收起，展开时紧贴边缘，拖出边缘后保持展开；改善收起页签的上下拖动。",
+    "昵称支持双击修改，最多 10 个字符，保存到账号服务器并跨设备同步；不涉及待办和便签云同步。",
+    "统一应用悬浮提示和确认弹窗，优化设置、提醒日期及添加待办输入框，修复顶部普通点击误收起等问题。"
   ]
 }
