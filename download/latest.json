@@ -1,14 +1,14 @@
 {
-  "version": "1.0.8",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.8/Daibantie-v1.0.8-x64-setup.exe",
-  "sha256": "ba845d04ee5cd67aa9bca5b625c52b1ea67c36f098b134cbc76f2c84d0f1f153",
-  "fileSizeBytes": 2780411,
-  "publishedAt": "2026-09-11T08:02:06.8766804+00:00",
-  "sourceCommit": "ad637d8eafb15b6e6c5965a6fadeed1aecd565ca",
+  "version": "1.0.9",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.9/Daibantie-v1.0.9-x64-setup.exe",
+  "sha256": "36602b34fae7b99d026318b84cd9c68dc23254394030567eef206ab2b9f2a514",
+  "fileSizeBytes": 2789804,
+  "publishedAt": "2026-09-15T01:58:49.3180200+00:00",
+  "sourceCommit": "ebf43a9d99f864197970336fed5f14400e5cfbaf",
   "notes": [
-    "修复反馈含截图时无法上传、只能保存在本地的问题",
-    "增加反馈处理进度与后台回复查看，便于持续跟进反馈",
-    "完善离线反馈队列，恢复网络后可自动重试且不会重复提交",
-    "更新官网产品截图，侧边区域只保留真实页签"
+    "优化消息中心与反馈沟通，支持图文回复和未读提醒",
+    "优化待办列表、标签管理与设为今天操作",
+    "修复页签悬浮说明、面板收起拖动及图片预览问题",
+    "统一界面样式并提升稳定性"
   ]
 }
