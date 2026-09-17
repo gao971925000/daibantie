@@ -1,16 +1,12 @@
 {
-  "version": "1.0.11",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.11/Daibantie-v1.0.11-x64-setup.exe",
-  "sha256": "fd5e7291c5d882547effa671240ee34720d6dc69a47e238692c6716ebec5fd91",
-  "fileSizeBytes": 2844778,
-  "publishedAt": "2026-09-17T04:48:01.3092155+00:00",
-  "sourceCommit": "dc8d10775c20408f5c290f17ac4b5f045785f70b",
+  "version": "1.0.12",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.12/Daibantie-v1.0.12-x64-setup.exe",
+  "sha256": "bf301d8f9a766070c4262908e0abc2bc9feafc6afceb4435cad5a32d3b494dae",
+  "fileSizeBytes": 2843157,
+  "publishedAt": "2026-09-17T06:03:36.8917278+00:00",
+  "sourceCommit": "893b199f2c7638da499999ecad3dbefbc3f06227",
   "notes": [
-    "加固便签与待办自动保存：保存成功后在便签左下角显示精确到秒的时间；退出、切换与安装更新前会先确认写入本机。",
-    "修复偶发重复登录、熄屏恢复后重新登录，以及输入时面板自动收起的问题。",
-    "待办支持长按顺滑拖拽排序；本周归纳改为普通行展示，并修复子任务箭头显示。",
-    "移除待办提醒菜单中的高级提醒入口。",
-    "强化本机数据保护：临时网络或登录刷新失败时保留当前待办和便签，避免空内容覆盖已有数据。",
-    "本版本将最低支持版本提升为 1.0.11，旧版客户端必须升级后才能继续编辑。"
+    "熄屏唤醒、网络不稳时面板不再误切为只读状态",
+    "设置中的开机自动启动默认开启"
   ]
 }
