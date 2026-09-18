@@ -1,12 +1,14 @@
-{
-  "version": "1.0.12",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.12/Daibantie-v1.0.12-x64-setup.exe",
-  "sha256": "bf301d8f9a766070c4262908e0abc2bc9feafc6afceb4435cad5a32d3b494dae",
-  "fileSizeBytes": 2843157,
-  "publishedAt": "2026-09-17T06:03:36.8917278+00:00",
-  "sourceCommit": "893b199f2c7638da499999ecad3dbefbc3f06227",
-  "notes": [
-    "熄屏唤醒、网络不稳时面板不再误切为只读状态",
-    "设置中的开机自动启动默认开启"
-  ]
+﻿{
+    "version":  "1.0.13",
+    "downloadUrl":  "https://www.daibantie.com/download/releases/v1.0.13/Daibantie-v1.0.13-x64-setup.exe",
+    "sha256":  "55663ca17ab2abff7c27594230d68d54190a3a85b41df4a8ad3bb238323ad2cd",
+    "fileSizeBytes":  2851851,
+    "publishedAt":  "2026-09-18T06:29:33.8541791+00:00",
+    "sourceCommit":  "216b8d01429f99aed9492eb9fe70519cc0f3aa32",
+    "notes":  [
+                  "提高保存与升级安装的稳定性",
+                  "新增待办和便签的字体、字号设置",
+                  "待办和便签页签支持置顶",
+                  "修复其他已知问题"
+              ]
 }
