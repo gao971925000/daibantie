@@ -1,14 +1,11 @@
-﻿{
-    "version":  "1.0.13",
-    "downloadUrl":  "https://www.daibantie.com/download/releases/v1.0.13/Daibantie-v1.0.13-x64-setup.exe",
-    "sha256":  "55663ca17ab2abff7c27594230d68d54190a3a85b41df4a8ad3bb238323ad2cd",
-    "fileSizeBytes":  2851851,
-    "publishedAt":  "2026-09-18T06:29:33.8541791+00:00",
-    "sourceCommit":  "216b8d01429f99aed9492eb9fe70519cc0f3aa32",
-    "notes":  [
-                  "提高保存与升级安装的稳定性",
-                  "新增待办和便签的字体、字号设置",
-                  "待办和便签页签支持置顶",
-                  "修复其他已知问题"
-              ]
+{
+  "version": "1.0.14",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.14/Daibantie-v1.0.14-x64-setup.exe",
+  "sha256": "a854560fc323addea09671faf7b6d265ccccfd4aeb34e17aacc784c40726b7f8",
+  "fileSizeBytes": 2868834,
+  "publishedAt": "2026-09-19T13:00:44.6572906+00:00",
+  "sourceCommit": "187c1836963014edc0d14448eb9368aec1213d05",
+  "notes": [
+    "回收站、归档库和搜索按主列表整理,修复搜索菜单跳出、更改保存位置失败和页签选中态,升级安装等待本机保存完成后再替换文件"
+  ]
 }
