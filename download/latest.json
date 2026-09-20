@@ -1,15 +1,12 @@
 {
-  "version": "1.0.16",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.16/Daibantie-v1.0.16-x64-setup.exe",
-  "sha256": "77343bedc50d23161b3b350d74a2dda8c75f0421350d651eee73d21cbfaee00f",
-  "fileSizeBytes": 2906163,
-  "publishedAt": "2026-09-20T13:12:27.0851465+00:00",
-  "sourceCommit": "7c0376914f9c67e426800c40759f8a07d9ba2304",
+  "version": "1.0.17",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.17/Daibantie-v1.0.17-x64-setup.exe",
+  "sha256": "0a130cbe2cae6bcc9733a47b2bb7c0560986fefdfd3f471a1cf58113d12afd15",
+  "fileSizeBytes": 2906555,
+  "publishedAt": "2026-09-20T13:50:05.0502811+00:00",
+  "sourceCommit": "5cf9a0196198b95872f363e92540e945682bdc0f",
   "notes": [
-    "【新增】时间轴便签",
-    "【新增】便签内容格式",
-    "【新增】持续任务",
-    "【新增】自定义时间段",
+    "【优化】更新下载更稳定",
     "【修复】其他已知问题"
   ]
 }
