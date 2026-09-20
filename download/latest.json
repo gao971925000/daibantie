@@ -1,16 +1,14 @@
 {
-  "version": "1.0.15",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.15/Daibantie-v1.0.15-x64-setup.exe",
-  "sha256": "690f4bf96e220b32f6b09e8a65cdea32a0763fd4b5b8efaede0e821a5991bd1e",
-  "fileSizeBytes": 2873248,
-  "publishedAt": "2026-09-20T04:09:19.4905493+00:00",
-  "sourceCommit": "6b854492809e2a87b7f33d7d527c7df715157735",
+  "version": "1.0.16",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.16/Daibantie-v1.0.16-x64-setup.exe",
+  "sha256": "a5c4162257bc363c5cf099aa61db04b77bafb65ba6f2883ad42d7cfecb67a9a5",
+  "fileSizeBytes": 2906421,
+  "publishedAt": "2026-09-20T12:36:35.3869409+00:00",
+  "sourceCommit": "08a44786f80b5e5ebb611dbe8c153d4d0dfefb8a",
   "notes": [
-    "【新增】打开面板即可查看更新说明并安装",
-    "【修复】下载完成后点击安装没有反应",
-    "【优化】安装包从官网下载，中断后会自动续传并重试",
-    "【新增】待办列表可预览详情备注",
-    "【新增】日历显示农历、节日和调休",
-    "【修复】重装时长时间停在正在关闭待办贴"
+    "【新增】时间轴便签",
+    "【新增】便签内容格式",
+    "【新增】持续任务",
+    "【新增】自定义时间段"
   ]
 }
