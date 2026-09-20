@@ -1,11 +1,12 @@
 {
   "version": "1.0.17",
   "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.17/Daibantie-v1.0.17-x64-setup.exe",
-  "sha256": "0a130cbe2cae6bcc9733a47b2bb7c0560986fefdfd3f471a1cf58113d12afd15",
-  "fileSizeBytes": 2906555,
-  "publishedAt": "2026-09-20T13:50:05.0502811+00:00",
-  "sourceCommit": "5cf9a0196198b95872f363e92540e945682bdc0f",
+  "sha256": "fdc5a26b4bbab1285e0e2bec663914995a4cacd48743909d8b0eacc7104312e1",
+  "fileSizeBytes": 2906687,
+  "publishedAt": "2026-09-20T14:03:34.1176317+00:00",
+  "sourceCommit": "be684925986c30142f49ad710467048129f5566b",
   "notes": [
+    "【修复】时间轴便签被当成普通正文显示",
     "【优化】更新下载更稳定",
     "【修复】其他已知问题"
   ]
