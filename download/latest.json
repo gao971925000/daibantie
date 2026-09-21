@@ -1,14 +1,13 @@
 {
-  "version": "1.0.18",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.18/Daibantie-v1.0.18-x64-setup.exe",
-  "sha256": "d42f1a50ef048f4e6973fc6ab006f9f95a5ba6aa89e90e11619976e8ded5ef35",
-  "fileSizeBytes": 2909898,
-  "publishedAt": "2026-09-21T03:04:52.1623746+00:00",
-  "sourceCommit": "0b0c6ed530100d8282d7fe54e4e3978746e2c0b6",
+  "version": "1.0.19",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.19/Daibantie-v1.0.19-x64-setup.exe",
+  "sha256": "c547dd423aac59c01077f5376bfa9f89d44e45f58f8f52217421d1ef009d4fee",
+  "fileSizeBytes": 3048308,
+  "publishedAt": "2026-09-21T16:38:04.9404001+00:00",
+  "sourceCommit": "ebd44700aaf820da81b6de5fbcff8dc78a015728",
   "notes": [
-    "【新增】登录页支持自动登录",
-    "【修复】页签上方出现windows样式白色按钮条问题修复",
-    "【优化】更新提醒改为开机登录、发现新版本时提示",
+    "【新增】支持待办强提醒：系统通知、图标闪烁、提示音、面板内提醒弹窗",
+    "【新增】便签支持字数统计",
     "【修复】其他已知问题"
   ]
 }
