@@ -1,10 +1,10 @@
 {
   "version": "1.0.18",
   "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.18/Daibantie-v1.0.18-x64-setup.exe",
-  "sha256": "19f8a57017601aa7ef80e26057a6f9285d14d57f392c23bfd6f78e95005d2229",
-  "fileSizeBytes": 2908444,
-  "publishedAt": "2026-09-21T02:47:34.7429178+00:00",
-  "sourceCommit": "f38644f5d134a2d02dfa9a36b2f6589e71f13723",
+  "sha256": "d42f1a50ef048f4e6973fc6ab006f9f95a5ba6aa89e90e11619976e8ded5ef35",
+  "fileSizeBytes": 2909898,
+  "publishedAt": "2026-09-21T03:04:52.1623746+00:00",
+  "sourceCommit": "0b0c6ed530100d8282d7fe54e4e3978746e2c0b6",
   "notes": [
     "【新增】登录页支持自动登录",
     "【修复】页签上方出现windows样式白色按钮条问题修复",
