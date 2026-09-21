@@ -1,9 +1,9 @@
 {
   "version": "1.0.19",
   "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.19/Daibantie-v1.0.19-x64-setup.exe",
-  "sha256": "c547dd423aac59c01077f5376bfa9f89d44e45f58f8f52217421d1ef009d4fee",
-  "fileSizeBytes": 3048308,
-  "publishedAt": "2026-09-21T16:38:04.9404001+00:00",
+  "sha256": "20c7f8e9ae09534d544ddb4ff159d8f66e886cdb795d1c4caa0fdf0b9b203e79",
+  "fileSizeBytes": 3047971,
+  "publishedAt": "2026-09-21T16:42:43.0601988+00:00",
   "sourceCommit": "ebd44700aaf820da81b6de5fbcff8dc78a015728",
   "notes": [
     "【新增】支持待办强提醒：系统通知、图标闪烁、提示音、面板内提醒弹窗",
