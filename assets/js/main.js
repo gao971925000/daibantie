@@ -1,5 +1,13 @@
 (function () {
   "use strict";
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  function pinTop() {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+  }
+  pinTop();
+  window.addEventListener("load", pinTop, { once: true });
   var toggle = document.getElementById("navToggle");
   var nav = document.getElementById("siteNav");
   function closeNav() {
