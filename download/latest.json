@@ -1,14 +1,14 @@
 {
-  "version": "1.0.17",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.17/Daibantie-v1.0.17-x64-setup.exe",
-  "sha256": "fdc5a26b4bbab1285e0e2bec663914995a4cacd48743909d8b0eacc7104312e1",
-  "fileSizeBytes": 2906687,
-  "publishedAt": "2026-09-20T14:03:34.1176317+00:00",
-  "sourceCommit": "be684925986c30142f49ad710467048129f5566b",
+  "version": "1.0.18",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.18/Daibantie-v1.0.18-x64-setup.exe",
+  "sha256": "19f8a57017601aa7ef80e26057a6f9285d14d57f392c23bfd6f78e95005d2229",
+  "fileSizeBytes": 2908444,
+  "publishedAt": "2026-09-21T02:47:34.7429178+00:00",
+  "sourceCommit": "f38644f5d134a2d02dfa9a36b2f6589e71f13723",
   "notes": [
-    "【新增】时间轴便签",
-    "【新增】便签内容格式",
-    "【新增】任务自定义时间段功能",
+    "【新增】登录页支持自动登录",
+    "【修复】页签上方出现windows样式白色按钮条问题修复",
+    "【优化】更新提醒改为开机登录、发现新版本时提示",
     "【修复】其他已知问题"
   ]
 }
