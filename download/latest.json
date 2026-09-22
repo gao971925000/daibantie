@@ -1,13 +1,11 @@
 {
-  "version": "1.0.19",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.19/Daibantie-v1.0.19-x64-setup.exe",
-  "sha256": "20c7f8e9ae09534d544ddb4ff159d8f66e886cdb795d1c4caa0fdf0b9b203e79",
-  "fileSizeBytes": 3047971,
-  "publishedAt": "2026-09-21T16:42:43.0601988+00:00",
-  "sourceCommit": "ebd44700aaf820da81b6de5fbcff8dc78a015728",
+  "version": "1.0.20",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.20/Daibantie-v1.0.20-x64-setup.exe",
+  "sha256": "e28c2cb40b40cd66b5b1911a66e0faeca5bb675f9d8803ed5d909a6e30dab9f4",
+  "fileSizeBytes": 3055668,
+  "publishedAt": "2026-09-22T15:02:08.3383521+00:00",
+  "sourceCommit": "905673ef1c0cd7e2d265d46ca4e9c4ab760ea6bf",
   "notes": [
-    "【新增】支持待办强提醒：系统通知、图标闪烁、提示音、面板内提醒弹窗",
-    "【新增】便签支持字数统计",
-    "【修复】其他已知问题"
+    "'新增导出功能','优化时间轴便签，增加可选时间、提醒','优化待办重复功能','优化完成动画，增加下拉选择，可关闭','修复一些已知问题'"
   ]
 }
