@@ -1,11 +1,15 @@
 {
-  "version": "1.0.20",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.20/Daibantie-v1.0.20-x64-setup.exe",
-  "sha256": "e28c2cb40b40cd66b5b1911a66e0faeca5bb675f9d8803ed5d909a6e30dab9f4",
-  "fileSizeBytes": 3055668,
-  "publishedAt": "2026-09-22T15:02:08.3383521+00:00",
-  "sourceCommit": "905673ef1c0cd7e2d265d46ca4e9c4ab760ea6bf",
+  "version": "1.0.21",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.21/Daibantie-v1.0.21-x64-setup.exe",
+  "sha256": "8c1f32ea6edb8e475562495fc1bddfe5ce4310e9bb8553a50313e8ffef3e7ce8",
+  "fileSizeBytes": 3072390,
+  "publishedAt": "2026-09-26T12:13:22.1632427+00:00",
+  "sourceCommit": "67468c99785783f1b388e08d5581a175582198d6",
   "notes": [
-    "'新增导出功能','优化时间轴便签，增加可选时间、提醒','优化待办重复功能','优化完成动画，增加下拉选择，可关闭','修复一些已知问题'"
+    "新增四象限视图",
+    "导出与搜索整合为检索与导出",
+    "时间轴便签优化",
+    "普通便签增加标签功能",
+    "修复其他已知问题"
   ]
 }
