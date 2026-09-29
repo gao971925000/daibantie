@@ -1,15 +1,15 @@
 {
-  "version": "1.0.21",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.21/Daibantie-v1.0.21-x64-setup.exe",
-  "sha256": "8c1f32ea6edb8e475562495fc1bddfe5ce4310e9bb8553a50313e8ffef3e7ce8",
-  "fileSizeBytes": 3072390,
-  "publishedAt": "2026-09-26T12:13:22.1632427+00:00",
-  "sourceCommit": "67468c99785783f1b388e08d5581a175582198d6",
+  "version": "1.0.22",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.22/Daibantie-v1.0.22-x64-setup.exe",
+  "sha256": "0be766df0145d644da1b202f3124420877a309fa2ef194c7ec172bb9e8657234",
+  "fileSizeBytes": 3105209,
+  "publishedAt": "2026-09-29T04:45:34.8473750+00:00",
+  "sourceCommit": "8814c97faada4bbbc2f3b7be9a63f5eaf29b5362",
   "notes": [
-    "新增四象限视图",
-    "导出与搜索整合为检索与导出",
-    "时间轴便签优化",
-    "普通便签增加标签功能",
-    "修复其他已知问题"
+    "【新增】日历视图：从主面板「…」菜单进入，支持周视图、月视图。",
+    "【新增】独立快捷键设置页：支持自定义、冲突检查、恢复默认，保存后立即生效。",
+    "【新增】日期归属设置，入口：设置-通用：统一控制主列表与日历视图。默认：已完成待办按实际完成日期展示；可切换为：完成后仍保留在原安排日期。",
+    "【修复】稳定性问题：拖拽调整面板大小时误收起、部分环境下页签遮挡等。",
+    "【修复】其他已知问题。"
   ]
 }
