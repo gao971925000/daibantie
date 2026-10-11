@@ -7,7 +7,7 @@
   <title>待办贴 —— 贴在桌面边缘的轻量待办</title>
   <meta name="description" content="待办贴是一款贴靠 Windows 桌面边缘的轻量待办与便签工具。随手记下，安静收起，重要的事一直在手边。" />
   <link rel="icon" href="assets/app-icon.png" />
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261011-install-guide" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -21,9 +21,9 @@
       <nav class="site-nav" id="siteNav" aria-label="主导航">
         <a href="#features">功能</a><a href="#preview">界面</a><a href="#questions">常见问题</a>
       </nav>
-      <a class="button button-primary header-download" href="download/DeskTodo-Setup.exe" download data-download>
+      <div class="header-actions"><a class="button button-primary header-download" href="download/DeskTodo-Setup.exe" download data-download>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Windows 版</span>
-      </a>
+      </a><a class="header-install-guide" href="assets/docs/install-guide.pdf" data-install-guide aria-haspopup="dialog" aria-controls="installGuideDialog">安装流程说明</a></div>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
     </div>
   </header>
@@ -97,6 +97,18 @@
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><a class="brand footer-brand" href="#top"><img src="assets/app-icon.svg" alt="" width="34" height="34" /><span><strong>待办贴</strong><small>DeskTodo</small></span></a><p>贴在桌面边缘的轻量待办与便签。</p><div><a href="#features">功能</a><a href="#preview">界面</a><a href="mailto:admin@daibantie.com">联系我们</a></div><small>© 2026 待办贴 · 数据默认保存在你的电脑</small></div></footer>
-  <script src="assets/js/main.js"></script>
+  <dialog class="install-guide-dialog" id="installGuideDialog" aria-labelledby="installGuideTitle" aria-describedby="installGuideDescription">
+    <header class="install-guide-header">
+      <div><h2 id="installGuideTitle">安装流程说明</h2><p id="installGuideDescription">共 3 页，向下滚动查看完整安装步骤</p></div>
+      <a class="install-guide-download" href="assets/docs/install-guide.pdf" download="安装流程说明.pdf">下载 PDF</a>
+      <button class="install-guide-close" type="button" aria-label="关闭安装流程说明" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
+    </header>
+    <div class="install-guide-pages" tabindex="0" role="region" aria-label="安装流程说明正文">
+      <figure><img data-src="assets/docs/install-guide/page-1.png" width="1160" height="1500" alt="第1页：下载完成后点击查看更多，展开删除按钮右侧菜单并选择保留，将安装包保存到本机。" /><figcaption>第 1 页 / 共 3 页</figcaption></figure>
+      <figure><img data-src="assets/docs/install-guide/page-2.png" width="1160" height="1500" alt="第2页：打开保存的安装包；出现Windows已保护你的电脑提示时，点击更多信息。" /><figcaption>第 2 页 / 共 3 页</figcaption></figure>
+      <figure><img data-src="assets/docs/install-guide/page-3.png" width="1160" height="1500" alt="第3页：展开更多信息后，点击仍要运行，继续安装待办贴。" /><figcaption>第 3 页 / 共 3 页</figcaption></figure>
+    </div>
+  </dialog>
+  <script src="assets/js/main.js?v=20261011-install-guide"></script>
 </body>
 </html>

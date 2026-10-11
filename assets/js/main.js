@@ -25,6 +25,30 @@
     document.addEventListener("keydown", function (event) { if (event.key === "Escape") closeNav(); });
   }
   var revealItems = document.querySelectorAll(".reveal");
+  var guide = document.getElementById("installGuideDialog");
+  var guideTrigger = null;
+  if (guide && typeof guide.showModal === "function") {
+    document.querySelectorAll("[data-install-guide]").forEach(function (link) {
+      link.addEventListener("click", function (event) {
+        event.preventDefault();
+        closeNav();
+        guideTrigger = link;
+        guide.querySelectorAll("img[data-src]").forEach(function (image) {
+          image.src = image.dataset.src;
+          image.removeAttribute("data-src");
+        });
+        guide.showModal();
+        guide.querySelector(".install-guide-pages").scrollTop = 0;
+        document.body.classList.add("install-guide-open");
+      });
+    });
+    guide.querySelector(".install-guide-close").addEventListener("click", function () { guide.close(); });
+    guide.addEventListener("click", function (event) { if (event.target === guide) guide.close(); });
+    guide.addEventListener("close", function () {
+      document.body.classList.remove("install-guide-open");
+      if (guideTrigger) guideTrigger.focus({ preventScroll: true });
+    });
+  }
   var reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!reducedMotion && "IntersectionObserver" in window) {
     var observer = new IntersectionObserver(function (entries) {
