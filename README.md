@@ -2,6 +2,8 @@
 
 静态下载页，无构建依赖，双击 `index.html` 即可在浏览器打开预览。
 
+Mac 下载独立使用 `download/macos-latest.json`，不覆盖 Windows 的 `latest.json` 和安装包。本次 Apple 芯片安装包为用户提供的 `待办贴_1.0.24_aarch64.dmg`，发布到 `download/releases/v1.0.24/Daibantie-v1.0.24-aarch64.dmg`；SHA-256 及大小见 Mac 清单。页面不提供 Intel Mac 下载，不声明已验证的最低系统版本或签名公证状态。Mac 包更新需先明确授权，再新增不可变版本路径、更新 Mac 清单和页面链接，并验证公网下载哈希。
+
 ## 目录结构
 
 ```text

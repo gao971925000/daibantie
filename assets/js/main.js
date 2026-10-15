@@ -59,13 +59,17 @@
   document.querySelectorAll("[data-download]").forEach(function (link) {
     link.addEventListener("click", function () { link.classList.add("is-downloading"); window.setTimeout(function () { link.classList.remove("is-downloading"); }, 900); });
   });
-  fetch("download/latest.json", { cache: "no-store" }).then(function (response) {
+  function loadRelease(url, versionSelector, sizeSelector) {
+  fetch(url, { cache: "no-store" }).then(function (response) {
     if (!response.ok) throw new Error("release metadata unavailable"); return response.json();
   }).then(function (release) {
-    if (typeof release.version === "string" && /^\d+\.\d+\.\d+$/.test(release.version)) document.querySelectorAll("[data-release-version]").forEach(function (node) { node.textContent = "v" + release.version; });
+    if (typeof release.version === "string" && /^\d+\.\d+\.\d+$/.test(release.version)) document.querySelectorAll(versionSelector).forEach(function (node) { node.textContent = "v" + release.version; });
     if (typeof release.fileSizeBytes === "number" && release.fileSizeBytes > 0) {
       var size = (release.fileSizeBytes / 1024 / 1024).toFixed(2) + " MB";
-      document.querySelectorAll("[data-release-size]").forEach(function (node) { node.textContent = size; });
+      document.querySelectorAll(sizeSelector).forEach(function (node) { node.textContent = size; });
     }
-  }).catch(function () { /* 保留页面中的版本兜底信息。 */ });
+  }).catch(function () { /* 保留页面中的版本兜底信息与可直接下载的链接。 */ });
+  }
+  loadRelease("download/latest.json", "[data-release-version]", "[data-release-size]");
+  loadRelease("download/macos-latest.json", "[data-mac-release-version]", "[data-mac-release-size]");
 })();
