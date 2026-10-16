@@ -60,3 +60,7 @@ body.install-guide-open{overflow:hidden}
 @media(min-width:761px) and (max-width:1100px){.header-inner{gap:16px}.site-nav{gap:14px}.header-actions{gap:10px}.header-download{padding-inline:12px;font-size:12px;gap:5px}.header-download svg{width:15px;height:15px}.header-install-guide{font-size:12px}.brand small{display:none}}
 @media(max-width:980px){.platform-releases{justify-items:center}.download-card{flex-wrap:wrap}.download-card>.download-actions{justify-content:flex-start}}
 @media(max-width:760px){.download-card>.download-actions{display:flex;flex-direction:column;align-items:stretch;width:100%}.header-actions{gap:10px}}
+/* 三种安装包复用现有按钮，窄屏保留首屏和页尾入口。 */
+.download-card{flex-wrap:wrap}.header-download{white-space:nowrap}
+@media(min-width:981px) and (max-width:1100px){.header-download{padding-inline:9px;font-size:11px}.header-actions{gap:8px}.site-nav{gap:10px}}
+@media(max-width:980px){.header-actions .header-download{display:none}}

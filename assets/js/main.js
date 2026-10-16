@@ -71,5 +71,6 @@
   }).catch(function () { /* 保留页面中的版本兜底信息与可直接下载的链接。 */ });
   }
   loadRelease("download/latest.json", "[data-release-version]", "[data-release-size]");
-})();
   loadRelease("download/macos-latest.json", "[data-mac-release-version]", "[data-mac-release-size]");
+  loadRelease("download/macos-intel-latest.json", "[data-mac-intel-release-version]", "[data-mac-intel-release-size]");
+})();
