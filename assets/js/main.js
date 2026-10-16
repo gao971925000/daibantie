@@ -72,3 +72,4 @@
   }
   loadRelease("download/latest.json", "[data-release-version]", "[data-release-size]");
 })();
+  loadRelease("download/macos-latest.json", "[data-mac-release-version]", "[data-mac-release-size]");

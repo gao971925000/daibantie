@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#fbf8f2" />
   <title>待办贴 —— 贴在桌面边缘的轻量待办</title>
-  <meta name="description" content="待办贴是贴在桌面边缘的轻量待办与便签工具，支持 Windows 10 / 11。随手记下，安静收起，重要的事一直在手边。" />
+  <meta name="description" content="待办贴是贴在桌面边缘的轻量待办与便签工具，支持 Windows 10 / 11 和 Apple 芯片 Mac。随手记下，安静收起，重要的事一直在手边。" />
   <link rel="icon" href="assets/app-icon.png" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261016-windows" />
+  <link rel="stylesheet" href="assets/css/style.css?v=20261016-macos-restored" />
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -21,7 +21,7 @@
       <nav class="site-nav" id="siteNav" aria-label="主导航">
         <a href="#features">功能</a><a href="#preview">界面</a><a href="#questions">常见问题</a>
       </nav>
-      <div class="header-actions"><a class="button button-primary header-download" href="download/DeskTodo-Setup.exe" download data-download>
+      <div class="header-actions"><a class="button button-primary header-download" href="download/releases/v1.0.24/Daibantie-v1.0.24-aarch64-20261016-c73e60f0.dmg" download data-download aria-label="下载 Mac 版，适用于 Apple 芯片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Mac 版</span></a><a class="button button-primary header-download" href="download/DeskTodo-Setup.exe" download data-download>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Windows 版</span>
       </a><a class="header-install-guide" href="assets/docs/install-guide.pdf" data-install-guide aria-haspopup="dialog" aria-controls="installGuideDialog">安装流程说明</a></div>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
@@ -33,10 +33,10 @@
       <div class="hero-orb hero-orb-one" aria-hidden="true"></div><div class="hero-orb hero-orb-two" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <p class="eyebrow"><span aria-hidden="true"></span>Windows 10 / 11 · 轻量桌面应用</p>
+          <p class="eyebrow"><span aria-hidden="true"></span>Windows 10 / 11 · macOS（Apple 芯片）</p>
           <h1>待办不用藏在<br /><em>层层窗口</em>之后。</h1>
           <p class="hero-lead">把今天的事贴在桌面边缘。需要时展开，忙碌时安静收起，让记录更近，让注意力留给正在做的事。</p>
-          <div class="hero-actions"><a class="button button-primary button-large" href="download/DeskTodo-Setup.exe" download data-download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Windows 版</span></a></div>
+          <div class="hero-actions"><a class="button button-primary button-large" href="download/releases/v1.0.24/Daibantie-v1.0.24-aarch64-20261016-c73e60f0.dmg" download data-download aria-label="下载 Mac 版，适用于 Apple 芯片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Mac 版</span></a><a class="button button-primary button-large" href="download/DeskTodo-Setup.exe" download data-download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Windows 版</span></a></div>
           <div class="platform-releases" aria-live="polite">
             <p class="release-line"><span>Windows · <b data-release-version>v1.0.24</b></span><i aria-hidden="true"></i><span data-release-size>2.99 MB</span><i aria-hidden="true"></i><span>64 位 · EXE</span></p>
           </div>
@@ -86,19 +86,20 @@
       <header class="section-heading section-heading-left reveal"><p class="section-kicker">常见问题</p><h2>下载之前，你可能想知道</h2></header>
       <div class="faq-list reveal">
         <details><summary>待办和便签保存在哪里？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>待办和便签默认保存在当前电脑的本机数据目录中。重要内容建议定期通过应用内“数据”页面导出备份。</p></details>
-        <details><summary>支持哪些系统？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>目前提供 Windows 10 / 11（64 位）安装包。</p></details>
+        <details><summary>支持哪些系统？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>提供 Windows 10 / 11（64 位）安装包，以及 Apple 芯片（M 系列）Mac 的 DMG 安装包。当前 Mac 安装包不适用于 Intel 芯片。</p></details>
+        <details><summary>Mac 版如何安装？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>下载 Mac 版 DMG，打开后将“待办贴”拖入“应用程序”，再从“应用程序”启动。下载前请在苹果菜单的“关于本机”中确认芯片为 Apple 芯片。页面顶部的安装流程 PDF 为 Windows 版说明。</p></details>
         <details><summary>升级会覆盖原有内容吗？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>正常覆盖安装不会清除本机数据。重要内容仍建议定期通过应用内“数据”页面导出保存。</p></details>
         <details><summary>目前需要付费吗？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>当前处于免费公测阶段。未来如调整为订阅服务，会提前向用户说明。</p></details>
       </div>
     </div></section>
 
-    <section class="download-section" id="download"><div class="container download-card reveal"><div><img src="assets/app-icon.svg" alt="" width="64" height="64" /><span><small>待办贴 · Windows</small><h2>让下一件事，离你近一点。</h2><p>Windows 10 / 11（64 位）</p></span></div><div class="download-actions"><a class="button button-light button-large" href="download/DeskTodo-Setup.exe" download data-download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Windows 版</span></a></div></div></section>
+    <section class="download-section" id="download"><div class="container download-card reveal"><div><img src="assets/app-icon.svg" alt="" width="64" height="64" /><span><small>待办贴 · Windows / Mac</small><h2>让下一件事，离你近一点。</h2><p>Windows 10 / 11（64 位）· Mac（Apple 芯片）</p></span></div><div class="download-actions"><a class="button button-light button-large" href="download/releases/v1.0.24/Daibantie-v1.0.24-aarch64-20261016-c73e60f0.dmg" download data-download aria-label="下载 Mac 版，适用于 Apple 芯片"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Mac 版</span></a><a class="button button-light button-large" href="download/DeskTodo-Setup.exe" download data-download><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>下载 Windows 版</span></a></div></div></section>
   </main>
 
   <footer class="site-footer"><div class="container footer-grid"><a class="brand footer-brand" href="#top"><img src="assets/app-icon.svg" alt="" width="34" height="34" /><span><strong>待办贴</strong><small>DeskTodo</small></span></a><p>贴在桌面边缘的轻量待办与便签。</p><div><a href="#features">功能</a><a href="#preview">界面</a><a href="mailto:admin@daibantie.com">联系我们</a></div><small>© 2026 待办贴 · 数据默认保存在你的电脑</small></div></footer>
   <dialog class="install-guide-dialog" id="installGuideDialog" aria-labelledby="installGuideTitle" aria-describedby="installGuideDescription">
     <header class="install-guide-header">
-      <div><h2 id="installGuideTitle">Windows 安装流程说明</h2><p id="installGuideDescription">共 3 页，向下滚动查看完整安装步骤</p></div>
+      <div><h2 id="installGuideTitle">Windows 安装流程说明</h2><p id="installGuideDescription">共 3 页，向下滚动查看完整安装步骤；Mac 安装方式见常见问题</p></div>
       <a class="install-guide-download" href="assets/docs/install-guide.pdf" download="安装流程说明.pdf">下载 PDF</a>
       <button class="install-guide-close" type="button" aria-label="关闭安装流程说明" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
     </header>
@@ -108,6 +109,8 @@
       <figure><img data-src="assets/docs/install-guide/page-3.png" width="1160" height="1500" alt="第3页：展开更多信息后，点击仍要运行，继续安装待办贴。" /><figcaption>第 3 页 / 共 3 页</figcaption></figure>
     </div>
   </dialog>
-  <script src="assets/js/main.js?v=20261016-windows"></script>
+  <script src="assets/js/main.js?v=20261016-macos-restored"></script>
 </body>
 </html>
+            <p class="release-line"><span>Mac · <b data-mac-release-version>v1.0.24</b></span><i aria-hidden="true"></i><span data-mac-release-size>4.39 MB</span><i aria-hidden="true"></i><span>Apple 芯片 · DMG</span></p>
+          <p class="download-help">Mac 版适用于 Apple 芯片（M 系列），不适用于 Intel Mac。</p>
