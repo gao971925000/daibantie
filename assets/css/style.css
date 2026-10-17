@@ -64,3 +64,8 @@ body.install-guide-open{overflow:hidden}
 /* 仅顶部提供下载入口，窄屏换行而不隐藏。 */
 @media(max-width:1280px){.header-inner{height:auto;min-height:72px;display:grid;grid-template-columns:1fr auto;gap:10px 16px;padding-block:12px}.site-nav{grid-column:2;grid-row:1}.header-actions{grid-column:1/-1;grid-row:2;width:100%;margin-left:0;justify-content:center;flex-wrap:wrap}.header-actions .header-download{display:inline-flex;font-size:13px;padding-inline:16px}.header-install-guide{font-size:13px}.nav-toggle{grid-column:2;grid-row:1;margin-left:0}}
 @media(max-width:760px){.site-nav{top:100%}.header-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.header-actions .header-download{min-width:0;min-height:44px;padding:7px 5px;font-size:11px;gap:4px;white-space:normal;text-align:center;line-height:1.35}.header-download svg{width:14px;height:14px}.header-install-guide{grid-column:1/-1;justify-content:center;min-height:32px}}
+
+/* Platform name stays primary; chip edition is a smaller qualifier. */
+.header-download .download-label{display:inline-flex;align-items:baseline;gap:.3em}
+.header-download .download-label small{font-size:.75em;font-weight:500;white-space:nowrap}
+@media(max-width:760px){.header-download .download-label{flex-direction:column;align-items:center;gap:1px;font-size:12px;line-height:1.2}.header-download .download-label small{font-size:9.5px}}

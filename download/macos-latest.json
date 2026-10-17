@@ -2,7 +2,7 @@
   "version": "1.0.24",
   "platform": "macos",
   "arch": "aarch64",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.24/Daibantie-v1.0.24-aarch64-20261016-c73e60f0.dmg",
-  "sha256": "c73e60f010b836f3e1f68e1cd5bf3714a1a083c2d035ed0ade9a21f41b15b742",
-  "fileSizeBytes": 4604614
+  "downloadUrl": "https://www.daibantie.com/download/%E5%BE%85%E5%8A%9E%E8%B4%B4_1.0.24_arm64.dmg?v=fc01299f",
+  "sha256": "fc01299fa9df474ac426c64d9212d773c24a7c5a95928d903a9c0fc137a22fd7",
+  "fileSizeBytes": 4607441
 }
