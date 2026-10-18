@@ -1,10 +1,10 @@
 {
   "version": "1.0.25",
   "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/Daibantie-v1.0.25-x64-setup.exe",
-  "sha256": "ec032c7d6e96fe73d648a6f636df6935076b9cb8d9437fa67299c9265fc50e3d",
-  "fileSizeBytes": 3337317,
-  "publishedAt": "2026-10-18T13:18:35.3790264+00:00",
-  "sourceCommit": "e04e1b360f08ab0fca3d5229dee62419bdd3639f",
+  "sha256": "c0b46e8de4e2c29edecdc25db34af204781b33f7d4ec480a9b9245c29ef24478",
+  "fileSizeBytes": 3338299,
+  "publishedAt": "2026-10-18T14:14:17.6375747+00:00",
+  "sourceCommit": "98ddf6fd09dc56c9da795dd97efaac5ea87fdfd8",
   "notes": [
     "【新增】：支持便签隐私锁，可保护指定便签或全部便签。入口：设置-个性化-隐私锁",
     "【新增】：支持最多五级待办任务，可多级展开和收起",
@@ -14,6 +14,7 @@
     "【新增】：支持自定义重复待办，用户可自定义设置重复规则",
     "【优化】：优化日历视图：可固定到桌面；支持双击日期格子空白区域查看当天待办列表；支持跨日期拖拽",
     "【优化】：优化完成圆圈的点击区域及轻量悬浮、按下反馈等",
+    "【修复】：修复消息中心待办标题重复显示",
     "【修复】：修复其他已知问题，增强产品稳定性和易用性"
   ]
 }
