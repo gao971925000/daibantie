@@ -3,9 +3,9 @@
   "minimumSupportedVersion": "1.0.24",
   "platform": "macos",
   "arch": "aarch64",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/6e7dd58c25db3561f4e84c5ed146002b629cf5fc48be87b98d7426a5b689ecc3/daibantie-1.0.25-arm64.dmg",
-  "sha256": "6e7dd58c25db3561f4e84c5ed146002b629cf5fc48be87b98d7426a5b689ecc3",
-  "fileSizeBytes": 4757552,
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/1a002280d4a193bee5a5cdb9d9f2a9235e910515a25c57ca9f6d4a1b5a35e558/daibantie-1.0.25-arm64.dmg",
+  "sha256": "1a002280d4a193bee5a5cdb9d9f2a9235e910515a25c57ca9f6d4a1b5a35e558",
+  "fileSizeBytes": 4743323,
   "notes": [
     "【新增】：支持便签隐私锁，可保护指定便签或全部便签，入口：设置－个性化－隐私锁",
     "【新增】：支持最多五级待办任务及多级展开、收起",
@@ -17,6 +17,6 @@
     "【修复】：修复调整大小后的贴边收起、移离顶部后仍收起，以及首次启动顶部页签位置异常、点击无法展开",
     "【修复】：修复页签重命名误报重名，关闭按钮可同时隐藏面板与页签，通过托盘图标再次唤出",
     "【优化】：Apple 芯片与 Intel Mac 更新独立匹配架构，支持应用内下载校验与安装",
-    "【修复】：保留既有登录凭据，禁止登录凭据读写反复弹出 macOS 钥匙串密码窗口；无权限时提示在待办贴内重新登录"
+    "【修复】：优化 macOS 登录凭据反复授权问题；安装本修复包后需在待办贴中重新登录一次，后续重启可自动登录"
   ]
 }

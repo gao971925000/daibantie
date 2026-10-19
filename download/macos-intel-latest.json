@@ -3,9 +3,9 @@
   "minimumSupportedVersion": "1.0.24",
   "platform": "macos",
   "arch": "x86_64",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/21b011ce36eff1fbd6ec227f68e9900ecedb33019bc559ce4ad667443fd43016/daibantie-1.0.25-x86_64.dmg",
-  "sha256": "21b011ce36eff1fbd6ec227f68e9900ecedb33019bc559ce4ad667443fd43016",
-  "fileSizeBytes": 5042363,
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/823dee4d48d378b2aec2577c818504bf668af85eab15c31f1afa96827677eb22/daibantie-1.0.25-x86_64.dmg",
+  "sha256": "823dee4d48d378b2aec2577c818504bf668af85eab15c31f1afa96827677eb22",
+  "fileSizeBytes": 5044143,
   "notes": [
     "【新增】：支持便签隐私锁，可保护指定便签或全部便签，入口：设置－个性化－隐私锁",
     "【新增】：支持最多五级待办任务及多级展开、收起",
@@ -17,6 +17,6 @@
     "【修复】：修复调整大小后的贴边收起、移离顶部后仍收起，以及首次启动顶部页签位置异常、点击无法展开",
     "【修复】：修复页签重命名误报重名，关闭按钮可同时隐藏面板与页签，通过托盘图标再次唤出",
     "【优化】：Apple 芯片与 Intel Mac 更新独立匹配架构，支持应用内下载校验与安装",
-    "【修复】：保留既有登录凭据，禁止登录凭据读写反复弹出 macOS 钥匙串密码窗口；无权限时提示在待办贴内重新登录"
+    "【修复】：优化 macOS 登录凭据反复授权问题；安装本修复包后需在待办贴中重新登录一次，后续重启可自动登录"
   ]
 }
