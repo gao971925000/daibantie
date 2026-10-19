@@ -3,9 +3,9 @@
   "minimumSupportedVersion": "1.0.24",
   "platform": "macos",
   "arch": "aarch64",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/9347b436474ba7537db7e763eb8ccf52c252ffbbd407c1e47b6822b4ae420063/daibantie-1.0.25-arm64.dmg",
-  "sha256": "9347b436474ba7537db7e763eb8ccf52c252ffbbd407c1e47b6822b4ae420063",
-  "fileSizeBytes": 4796674,
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.25/e6488833cea9275795647d1302e24a8b3e37be29a30c46d25dd72b545f8ca8fc/daibantie-1.0.25-arm64.dmg",
+  "sha256": "e6488833cea9275795647d1302e24a8b3e37be29a30c46d25dd72b545f8ca8fc",
+  "fileSizeBytes": 4797332,
   "notes": [
     "【新增】：支持便签隐私锁，可保护指定便签或全部便签，入口：设置－个性化－隐私锁",
     "【新增】：支持最多五级待办任务及多级展开、收起",
@@ -18,6 +18,8 @@
     "【修复】：修复页签重命名误报重名，关闭按钮可同时隐藏面板与页签，通过托盘图标再次唤出",
     "【优化】：Apple 芯片与 Intel Mac 更新独立匹配架构，支持应用内下载校验与安装",
     "【修复】：优化登录凭据保存方式，首次迁移后开启自动登录，后续正常更新可继续保持登录",
-    "【修复】：修复登录后左右页签与面板顶部齐平，恢复至头像下方分界线附近"
+    "【修复】：修复登录后左右页签与面板顶部齐平，恢复至头像下方分界线附近",
+    "【优化】：更多页签仅保留图标，并统一与便签之间的间距",
+    "【修复】：设置弹窗不再误触主面板缩放，缩放取消不再误报保存失败"
   ]
 }
