@@ -21,7 +21,7 @@
       <nav class="site-nav" id="siteNav" aria-label="主导航">
         <a href="#features">功能</a><a href="#preview">界面</a><a href="#questions">常见问题</a>
       </nav>
-      <div class="header-actions"><a class="button button-primary header-download" href="download/releases/v1.0.25/e6488833cea9275795647d1302e24a8b3e37be29a30c46d25dd72b545f8ca8fc/daibantie-1.0.25-arm64.dmg" download="daibantie-1.0.25-arm64.dmg" data-download aria-label="Mac Apple 芯片版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span class="download-label">Mac <small>Apple 芯片版</small></span></a><a class="button button-primary header-download" href="download/releases/v1.0.25/aac1dfcc2173130cf83b0b5d0f2e000ab6ff8aaac0af2d89be2d9781a053579f/daibantie-1.0.25-x86_64.dmg" download="daibantie-1.0.25-x86_64.dmg" data-download aria-label="Mac Intel 芯片版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span class="download-label">Mac <small>Intel 芯片版</small></span></a><a class="button button-primary header-download" href="download/DeskTodo-Setup.exe" download data-download>
+      <div class="header-actions"><a class="button button-primary header-download" data-download-platform="macos-aarch64" href="https://api.daibantie.com/download/releases/v1.0.25/e6488833cea9275795647d1302e24a8b3e37be29a30c46d25dd72b545f8ca8fc/daibantie-1.0.25-arm64.dmg" download="daibantie-1.0.25-arm64.dmg" data-download aria-label="Mac Apple 芯片版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span class="download-label">Mac <small>Apple 芯片版</small></span></a><a class="button button-primary header-download" data-download-platform="macos-x86_64" href="https://api.daibantie.com/download/releases/v1.0.25/aac1dfcc2173130cf83b0b5d0f2e000ab6ff8aaac0af2d89be2d9781a053579f/daibantie-1.0.25-x86_64.dmg" download="daibantie-1.0.25-x86_64.dmg" data-download aria-label="Mac Intel 芯片版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span class="download-label">Mac <small>Intel 芯片版</small></span></a><a class="button button-primary header-download" data-download-platform="windows" href="https://api.daibantie.com/download/releases/v1.0.25/Daibantie-v1.0.25-c0b46e8de4e2c29edecdc25db34af204781b33f7d4ec480a9b9245c29ef24478-x64-setup.exe" download data-download>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg><span>Windows 版</span>
       </a><a class="header-install-guide" href="assets/docs/install-guide.pdf" data-install-guide aria-haspopup="dialog" aria-controls="installGuideDialog">Windows 版安装流程说明</a></div>
       <button class="nav-toggle" id="navToggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
@@ -39,9 +39,10 @@
           <div class="platform-releases" aria-live="polite">
             <p class="release-line"><span>Mac · Apple 芯片 · <b data-mac-release-version>v1.0.25</b></span><i aria-hidden="true"></i><span data-mac-release-size>4.58 MB</span><i aria-hidden="true"></i><span>ARM64 · DMG</span></p>
             <p class="release-line"><span>Mac · Intel 芯片 · <b data-mac-intel-release-version>v1.0.25</b></span><i aria-hidden="true"></i><span data-mac-intel-release-size>4.86 MB</span><i aria-hidden="true"></i><span>x86_64 · DMG</span></p>
-            <p class="release-line"><span>Windows · <b data-release-version>v1.0.24</b></span><i aria-hidden="true"></i><span data-release-size>2.99 MB</span><i aria-hidden="true"></i><span>64 位 · EXE</span></p>
+            <p class="release-line"><span>Windows · <b data-release-version>v1.0.25</b></span><i aria-hidden="true"></i><span data-release-size>3.18 MB</span><i aria-hidden="true"></i><span>64 位 · EXE</span></p>
           </div>
-          <p class="download-help">下载偶发中断时，请重新点击下载多试一两次；连续失败可稍后再试。</p>
+          <p class="download-help">优先使用官方服务器下载。若线路不可用，可使用下方对应系统的备用下载。</p>
+          <details class="download-help"><summary>备用下载线路</summary><p><a data-download-backup="macos-aarch64" href="download/releases/v1.0.25/e6488833cea9275795647d1302e24a8b3e37be29a30c46d25dd72b545f8ca8fc/daibantie-1.0.25-arm64.dmg" download>Mac · Apple 芯片</a> · <a data-download-backup="macos-x86_64" href="download/releases/v1.0.25/aac1dfcc2173130cf83b0b5d0f2e000ab6ff8aaac0af2d89be2d9781a053579f/daibantie-1.0.25-x86_64.dmg" download>Mac · Intel 芯片</a> · <a data-download-backup="windows" href="download/releases/v1.0.25/Daibantie-v1.0.25-c0b46e8de4e2c29edecdc25db34af204781b33f7d4ec480a9b9245c29ef24478-x64-setup.exe" download>Windows</a></p></details>
         </div>
         <div class="hero-product reveal">
           <div class="product-halo" aria-hidden="true"></div>
@@ -109,7 +110,7 @@
       <figure><img data-src="assets/docs/install-guide/page-3.png" width="1160" height="1500" alt="第3页：展开更多信息后，点击仍要运行，继续安装待办贴。" /><figcaption>第 3 页 / 共 3 页</figcaption></figure>
     </div>
   </dialog>
-  <script src="assets/js/main.js?v=20261016-top-downloads"></script>
+  <script src="assets/js/main.js?v=20261021-server-downloads"></script>
 </body>
 </html>
 
