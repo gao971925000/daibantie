@@ -2,7 +2,19 @@
 
 静态下载页，无构建依赖，双击 `index.html` 即可在浏览器打开预览。
 
-Mac 下载独立使用 `download/macos-latest.json`，不覆盖 Windows 的 `latest.json` 和安装包。本次 Apple 芯片安装包为用户提供的 `待办贴_1.0.24_aarch64.dmg`，发布到 `download/releases/v1.0.24/Daibantie-v1.0.24-aarch64.dmg`；SHA-256 及大小见 Mac 清单。页面不提供 Intel Mac 下载，不声明已验证的最低系统版本或签名公证状态。Mac 包更新需先明确授权，再新增不可变版本路径、更新 Mac 清单和页面链接，并验证公网下载哈希。
+Mac Apple 芯片和 Intel 芯片下载分别使用 `download/macos-latest.json`、`download/macos-intel-latest.json`，不覆盖 Windows 的 `latest.json` 和安装包。版本、SHA-256 及大小以各自清单为准；包更新需先明确授权，再新增不可变版本路径、更新对应清单及页面链接，并验证公网下载哈希。
+
+## 生产访问与部署（2026-10-26 起）
+
+`www.daibantie.com` 和 `daibantie.com` 已指向官方服务器 `8.133.182.248`。官网由 Caddy 托管，裸域名保留路径跳转至 www；证书自动续期。GitHub 继续保存公开源码和安装包备份，官网访问不再依赖 GitHub Pages。
+
+**仅推送本仓库不能更新服务器官网。** Windows、Mac 发版以及单独修改官网后，都必须在桌面端/服务端仓库执行：
+
+```powershell
+pwsh -NoProfile -File scripts/deploy-website.ps1 -WebRepositoryPath <本仓库绝对路径>
+```
+
+部署要求本仓库干净且已经提交，通过逐文件哈希验证后原子切换 `/srv/daibantie-web/current`。已有相同文件硬链接复用，历史目录保留；不要直接修改服务器 current 中的硬链接文件。首次配置与回滚见桌面端仓库 `server/deploy/WEBSITE.md`。
 
 ## 目录结构
 
@@ -25,9 +37,9 @@ todo_tool_web/
 
 ## 如何发布正式安装包
 
-官网两个下载入口继续使用固定文件名 `DeskTodo-Setup.exe`，因此网页链接不需要随版本修改。客户端自动更新不使用这个可覆盖地址，而是使用 `download/releases/v版本号/` 下的不可变安装包，避免 GitHub Pages 缓存旧文件导致安全校验失败。
+官网下载主入口优先使用 `api.daibantie.com` 上的不可变安装包，www 提供相同文件和备用入口。`download/DeskTodo-Setup.exe` 仅保留为兼容的最新包别名；客户端自动更新使用 `download/releases/v版本号/` 下带哈希的不可变安装包，避免缓存旧文件导致安全校验失败。
 
-正式安装包不再手工复制和提交。桌面端仓库的 `scripts/release-public.ps1` 会生成版本化安装包、覆盖官网固定下载包、写入 `latest.json`、提交并推送 `main`，再从公网重新下载两份文件校验大小与 SHA-256。只有 GitHub Pages 文件完全正确，才会通知客户端有新版本。
+Windows 正式安装包不再手工复制和提交。桌面端仓库的 `scripts/release-public.ps1` 会生成版本化安装包、预置 API 下载文件、更新兼容别名和 `latest.json`、提交并推送 `main`，随后部署服务器官网，再从公网重新下载文件校验大小与 SHA-256。只有服务器官网和安装包验证通过，才通知客户端有新版本。Mac 发版同样需要部署服务器官网，但仍保留自己的清单及安装包，不得覆盖 Windows 文件。
 
 本仓库只承载正式版本；本地 QA 安装包严禁提交。不要覆盖已经发布的 `download/releases/v版本号/` 文件。发现线上版本有问题时停止发布清单并发布更高版本修复，不要原地替换安装包。
 
