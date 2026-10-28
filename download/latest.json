@@ -1,19 +1,11 @@
 {
-  "version": "1.0.28",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.28/Daibantie-v1.0.28-b002ecfa07939d50ad1c0d01a784950772fe6e3bee3f597fd686d687bbd849cd-x64-setup.exe",
-  "sha256": "b002ecfa07939d50ad1c0d01a784950772fe6e3bee3f597fd686d687bbd849cd",
-  "fileSizeBytes": 5352360,
-  "publishedAt": "2026-10-28T01:40:44.0062155+00:00",
-  "sourceCommit": "8e7c9c09e15e5e5e06abe7df88dc5b6f17cd1810",
+  "version": "1.0.29",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.29/Daibantie-v1.0.29-136d04ab96cc0451ba1b08ac7c2259e8058b03c62e34aaeb590b90c6b3adbf70-x64-setup.exe",
+  "sha256": "136d04ab96cc0451ba1b08ac7c2259e8058b03c62e34aaeb590b90c6b3adbf70",
+  "fileSizeBytes": 5350864,
+  "publishedAt": "2026-10-28T02:52:59.6017719+00:00",
+  "sourceCommit": "44fe56eebcfedc422f9c1d1e9a448bb18a0a752f",
   "notes": [
-    "【新增】支持在待办详情备注中粘贴图片",
-    "【新增】便签格式菜单支持复选框列表",
-    "【新增】清单升级为独立待办清单，和日期列表待办各自独立，清单支持拖拽排序、置顶等",
-    "【优化】待办支持时间点、时间段，并优化相关页面的日期展示",
-    "【优化】四象限增加清单、标签、日期、优先级、时间段等筛选",
-    "【优化】便签在面板展开或收起状态下均可长按排序；面板收起后仅长按”待办“页签才可移动整组页签",
-    "【优化】日历视图：精简表头与统计区域，调整高亮、时间和提醒展示",
-    "【修复】修复其他已知问题",
-    "注：有使用上的疑问可以查看面板右上角...菜单中的”待办贴使用说明“，也可通过点击头像-设置-反馈进行咨询"
+    "紧急修复：本周待办展示不全问题"
   ]
 }
