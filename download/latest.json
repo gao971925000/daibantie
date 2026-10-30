@@ -1,11 +1,19 @@
 {
-  "version": "1.0.29",
-  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.29/Daibantie-v1.0.29-136d04ab96cc0451ba1b08ac7c2259e8058b03c62e34aaeb590b90c6b3adbf70-x64-setup.exe",
-  "sha256": "136d04ab96cc0451ba1b08ac7c2259e8058b03c62e34aaeb590b90c6b3adbf70",
-  "fileSizeBytes": 5350864,
-  "publishedAt": "2026-10-28T02:52:59.6017719+00:00",
-  "sourceCommit": "44fe56eebcfedc422f9c1d1e9a448bb18a0a752f",
+  "version": "1.0.30",
+  "downloadUrl": "https://www.daibantie.com/download/releases/v1.0.30/Daibantie-v1.0.30-43b3e426da0b45fbbbe623baafd236ff7f5455f0427294d0f469484401ef5c24-x64-setup.exe",
+  "sha256": "43b3e426da0b45fbbbe623baafd236ff7f5455f0427294d0f469484401ef5c24",
+  "fileSizeBytes": 5594225,
+  "publishedAt": "2026-10-30T15:51:45.7804308+00:00",
+  "sourceCommit": "a37d6a02de11d8191c5d949493163beaa402d791",
   "notes": [
-    "紧急修复：本周待办展示不全问题"
+    "提要 ：点击【头像】，打开【设置】页面，待办贴很多玩法均在其中，可进行个性化配置",
+    "【新增】右键便签页签可收起到“全部便签”（三条短横线的页签），也可在“全部便签”列表中进行管理",
+    "【新增】重复待办可提前生成并展示在对应日期；自定义重复支持日期范围",
+    "【新增】设置页面中新增“面板设置”，支持分别调整正文字号、界面字号，并自定义文字颜色",
+    "【新增】待办列表支持展示详情图片，可滑动查看、放大预览和删除",
+    "【优化】日历视图增加“置底”功能，可显示在 Windows 原生桌面图标下方",
+    "【优化】重做备份与迁移流程",
+    "【优化】四象限支持待办拖拽排序及跨象限移动",
+    "【修复】修复其他已知问题"
   ]
 }
