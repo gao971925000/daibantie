@@ -1,0 +1,111 @@
+.platform-downloads{margin-top:26px;scroll-margin-top:92px;max-width:560px;text-align:left}
+.platform-downloads [hidden]{display:none!important}
+.platform-downloads h2{font-size:14px;font-weight:600;color:var(--ink-soft);margin:0 0 10px}
+.download-tabs{display:flex;gap:5px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:14px}
+.download-tabs button{border:0;background:transparent;color:var(--ink-soft);font:inherit;font-size:13px;padding:8px 12px;border-radius:9px;cursor:pointer;white-space:nowrap}
+.download-tabs [aria-selected="true"]{background:var(--coral-soft);color:var(--coral-dark)}
+.download-tabs button:hover{background:var(--paper-deep)}
+.download-tabs button:focus-visible,.download-option:focus-visible{outline:2px solid var(--coral-dark);outline-offset:3px}
+.download-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.download-option{display:flex;align-items:center;gap:12px;min-width:0;min-height:78px;padding:14px;border:1px solid var(--line-strong);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none}
+.download-option:hover{border-color:var(--coral);background:var(--coral-soft)}
+.download-option>svg{width:19px;height:19px;flex:none;stroke:var(--coral-dark)}
+.download-option>span{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.download-option strong{font-size:14px;font-weight:600;line-height:1.4;overflow-wrap:anywhere}
+.download-option small{font-size:12px;color:var(--ink-soft);font-weight:400}
+.download-option.is-downloading{background:var(--coral-soft)}
+.download-empty{min-height:78px;padding:14px 0;color:var(--ink-soft);font-size:13px;line-height:1.8}
+/* Restore the site's existing header and hero geometry; adjust downloads only. */
+.header-actions{gap:18px}
+@media(max-width:1280px){.header-actions{display:flex;justify-content:center;align-items:center;gap:18px}}
+@media(max-width:980px){.platform-downloads{margin-inline:auto}.hero-copy .platform-downloads{text-align:left}}
+@media(max-width:760px){.platform-downloads{max-width:520px}.download-options{gap:10px}.download-option{gap:9px;padding:12px;min-height:74px}.header-actions{display:flex;grid-template-columns:none}.header-actions .header-download{min-width:80px;font-size:13px;padding:8px 16px;white-space:nowrap}.header-install-guide{min-height:44px;font-size:12px}}
+@media(max-width:430px){.download-options{grid-template-columns:1fr}.download-option{min-height:66px}.download-tabs{gap:2px}.download-tabs button{font-size:12px;padding:8px 9px;min-height:44px}}
+@media(prefers-reduced-motion:reduce){.platform-downloads *{scroll-behavior:auto}}
+
+/* A temporary destination cue; outlines and shadows do not move the layout. */
+.platform-downloads.is-highlighted{outline:2px solid var(--coral);outline-offset:10px;border-radius:14px;box-shadow:0 0 0 10px var(--coral-soft)}
+.platform-downloads.is-highlighted [role="tabpanel"] .download-option{border-color:var(--coral);background:var(--coral-soft)}
+
+.platform-downloads .download-note{margin:0 0 12px;color:var(--ink-soft);font-size:13px;line-height:1.8}
+
+
+.domestic-download-guide {
+  margin: 0 0 14px;
+  padding: 14px;
+  border: 1px solid var(--line-strong);
+  border-top: 3px solid var(--coral);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.domestic-download-guide h3,
+.domestic-download-guide h4,
+.domestic-download-guide strong {
+  color: var(--ink);
+}
+.domestic-download-guide h3 {
+  margin: 0 0 3px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+.domestic-download-guide h4 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+.domestic-download-guide p {
+  margin: 0;
+}
+.domestic-architecture-table {
+  width: 100%;
+  margin: 9px 0 11px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: var(--ink);
+  text-align: left;
+}
+.domestic-architecture-table th,
+.domestic-architecture-table td {
+  padding: 5px 8px;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: anywhere;
+}
+.domestic-architecture-table thead {
+  background: var(--paper-deep);
+}
+.domestic-architecture-table thead th:first-child {
+  width: 42%;
+}
+.domestic-architecture-table tbody th {
+  font-weight: 500;
+}
+.domestic-download-guide code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.95em;
+  color: var(--ink);
+}
+.domestic-guide-steps {
+  margin: 0;
+  padding-inline-start: 20px;
+}
+.domestic-guide-steps li + li {
+  margin-top: 4px;
+}
+.domestic-download-guide .domestic-guide-example {
+  margin: 8px 0 4px;
+}
+.domestic-guide-tip {
+  color: var(--ink-soft);
+}
+@media (max-width: 430px) {
+  .domestic-download-guide {
+    padding: 11px;
+  }
+  .domestic-architecture-table th,
+  .domestic-architecture-table td {
+    padding-inline: 5px;
+  }
+}
+

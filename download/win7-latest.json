@@ -1,0 +1,19 @@
+{
+  "version": "1.1.1",
+  "minimumSupportedVersion": "1.0.1",
+  "platform": "windows",
+  "arch": "x86_64",
+  "os": "win7",
+  "channel": "win7-stable",
+  "downloadUrl": "https://api.daibantie.com/download/win7/releases/v1.1.1/Daibantie-Win7-v1.1.1-9aa9b3c938dbae9a657a3bfbfc73ab4638e8f8f44730eb79ab5a36af9facdff0-x64-setup.exe",
+  "sha256": "9aa9b3c938dbae9a657a3bfbfc73ab4638e8f8f44730eb79ab5a36af9facdff0",
+  "fileSizeBytes": 5955387,
+  "publishedAt": "2026-11-10T10:18:10.785151+08:00",
+  "notes": [
+    "修复安装完成时短暂读不到主程序版本导致的启动拦截，并区分读取失败和版本不符。",
+    "修正右侧页签重新贴边时的裁剪位置，保留页签边缘与提醒角标。",
+    "安装包不内置 WebView2，缺失时从国内服务器下载并校验 Win7 兼容组件。",
+    "适用于 Windows 7 SP1（64 位），请从官网下载并安装。",
+    "部分 Win7 环境的整列页签消失、白块与缩放闪烁仍需实机验证。"
+  ]
+}

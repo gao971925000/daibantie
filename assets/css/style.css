@@ -48,25 +48,43 @@ button,a{font:inherit}a{color:inherit;text-decoration:none}img{display:block;max
 .preview-media img { object-position: left top; filter: drop-shadow(0 8px 12px rgba(68,53,36,.09)); }
 .preview-card figcaption { margin-left: 11.666667%; padding-left: 0; padding-right: 0; border-top: 0; background: transparent; }
 
-.header-actions{display:flex;align-items:center;gap:18px;margin-left:auto;flex-shrink:0}.header-actions .header-download{margin-left:0}.header-install-guide{display:inline-flex;align-items:center;min-height:44px;color:var(--ink-soft);font-size:14px;white-space:nowrap}.header-install-guide:hover,.install-guide-download:hover{color:var(--coral-dark)}
-.header-install-guide:focus-visible,.install-guide-download:focus-visible,.install-guide-close:focus-visible,.install-guide-pages:focus-visible{outline:3px solid color-mix(in srgb,var(--coral) 35%,transparent);outline-offset:3px}
+.header-actions{display:flex;align-items:center;gap:18px;margin-left:auto;flex-shrink:0}.header-actions .header-download{margin-left:0}.install-guide-download:hover{color:var(--coral-dark)}
+.install-guide-download:focus-visible,.install-guide-close:focus-visible,.install-guide-pages:focus-visible{outline:3px solid color-mix(in srgb,var(--coral) 35%,transparent);outline-offset:3px}
 body.install-guide-open{overflow:hidden}
 .install-guide-dialog{width:min(960px,calc(100vw - 32px));height:min(90dvh,1000px);max-width:none;max-height:calc(100dvh - 32px);padding:0;border:1px solid var(--line);border-radius:var(--radius-md);background:var(--surface);color:var(--ink);box-shadow:var(--shadow-lg);overflow:hidden}
 .install-guide-dialog[open]{display:flex;flex-direction:column}.install-guide-dialog::backdrop{background:rgba(39,40,45,.48);backdrop-filter:blur(5px)}
 .install-guide-header{display:flex;align-items:center;gap:16px;flex-shrink:0;padding:16px 20px;border-bottom:1px solid var(--line)}.install-guide-header>div{min-width:0;flex:1}.install-guide-header h2{font-size:20px;line-height:1.4}.install-guide-header p{margin-top:3px;color:var(--muted);font-size:12px}.install-guide-download{color:var(--ink-soft);font-size:13px;white-space:nowrap}.install-guide-close{width:44px;height:44px;flex:0 0 auto;display:grid;place-items:center;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink-soft);cursor:pointer}.install-guide-close:hover{background:var(--coral-soft);color:var(--coral-dark)}.install-guide-close svg{width:20px;height:20px}
 .install-guide-pages{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding:18px;background:var(--paper-deep)}.install-guide-pages figure{max-width:800px;margin:0 auto 18px}.install-guide-pages figure:last-child{margin-bottom:0}.install-guide-pages img{width:100%;height:auto;border:1px solid var(--line);border-radius:4px;background:#fff;box-shadow:var(--shadow-sm)}.install-guide-pages figcaption{padding:7px 0 0;color:var(--muted);font-size:12px;text-align:center}
 @media(max-width:980px){.header-inner{gap:20px}.site-nav{gap:20px}.header-actions{gap:12px}}
-@media(max-width:760px){.header-inner{gap:12px}.nav-toggle{margin-left:0}.header-install-guide{font-size:13px}.install-guide-header{padding:12px;gap:10px}.install-guide-header h2{font-size:17px}.install-guide-header p{font-size:11px}.install-guide-download{font-size:12px}.install-guide-pages{padding:10px}.install-guide-dialog{border-radius:18px;width:calc(100vw - 20px);max-height:calc(100dvh - 20px);height:92dvh}}
+@media(max-width:760px){.header-inner{gap:12px}.nav-toggle{margin-left:0}.install-guide-header{padding:12px;gap:10px}.install-guide-header h2{font-size:17px}.install-guide-header p{font-size:11px}.install-guide-download{font-size:12px}.install-guide-pages{padding:10px}.install-guide-dialog{border-radius:18px;width:calc(100vw - 20px);max-height:calc(100dvh - 20px);height:92dvh}}
 /* 两个平台独立展示版本，避免 Mac 下载被 Windows 发布信息覆盖。 */
 .platform-releases{display:grid;gap:5px;margin-top:23px}.platform-releases .release-line{margin-top:0}.download-card>.download-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:12px;flex-shrink:0}.download-actions .button{white-space:nowrap}.header-actions{gap:12px}
-@media(min-width:761px) and (max-width:1100px){.header-inner{gap:16px}.site-nav{gap:14px}.header-actions{gap:10px}.header-download{padding-inline:12px;font-size:12px;gap:5px}.header-download svg{width:15px;height:15px}.header-install-guide{font-size:12px}.brand small{display:none}}
+@media(min-width:761px) and (max-width:1100px){.header-inner{gap:16px}.site-nav{gap:14px}.header-actions{gap:10px}.header-download{padding-inline:12px;font-size:12px;gap:5px}.header-download svg{width:15px;height:15px}.brand small{display:none}}
 @media(max-width:980px){.platform-releases{justify-items:center}.download-card{flex-wrap:wrap}.download-card>.download-actions{justify-content:flex-start}}
 @media(max-width:760px){.download-card>.download-actions{display:flex;flex-direction:column;align-items:stretch;width:100%}.header-actions{gap:10px}}
 /* 仅顶部提供下载入口，窄屏换行而不隐藏。 */
-@media(max-width:1280px){.header-inner{height:auto;min-height:72px;display:grid;grid-template-columns:1fr auto;gap:10px 16px;padding-block:12px}.site-nav{grid-column:2;grid-row:1}.header-actions{grid-column:1/-1;grid-row:2;width:100%;margin-left:0;justify-content:center;flex-wrap:wrap}.header-actions .header-download{display:inline-flex;font-size:13px;padding-inline:16px}.header-install-guide{font-size:13px}.nav-toggle{grid-column:2;grid-row:1;margin-left:0}}
-@media(max-width:760px){.site-nav{top:100%}.header-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.header-actions .header-download{min-width:0;min-height:44px;padding:7px 5px;font-size:11px;gap:4px;white-space:normal;text-align:center;line-height:1.35}.header-download svg{width:14px;height:14px}.header-install-guide{grid-column:1/-1;justify-content:center;min-height:32px}}
+@media(max-width:1280px){.header-inner{height:auto;min-height:72px;display:grid;grid-template-columns:1fr auto;gap:10px 16px;padding-block:12px}.site-nav{grid-column:2;grid-row:1}.header-actions{grid-column:1/-1;grid-row:2;width:100%;margin-left:0;justify-content:center;flex-wrap:wrap}.header-actions .header-download{display:inline-flex;font-size:13px;padding-inline:16px}.nav-toggle{grid-column:2;grid-row:1;margin-left:0}}
+@media(max-width:760px){.site-nav{top:100%}.header-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.header-actions .header-download{min-width:0;min-height:44px;padding:7px 5px;font-size:11px;gap:4px;white-space:normal;text-align:center;line-height:1.35}.header-download svg{width:14px;height:14px}}
 
 /* Platform name stays primary; chip edition is a smaller qualifier. */
 .header-download .download-label{display:inline-flex;align-items:baseline;gap:.3em}
 .header-download .download-label small{font-size:.75em;font-weight:500;white-space:nowrap}
 @media(max-width:760px){.header-download .download-label{flex-direction:column;align-items:center;gap:1px;font-size:12px;line-height:1.2}.header-download .download-label small{font-size:9.5px}}
+
+.windows-install-guide{display:inline-flex;align-items:center;gap:7px;min-height:44px;margin-top:5px;padding-inline:4px;color:var(--ink-soft);font-size:14px;line-height:1.4;border-radius:8px}
+.windows-install-guide svg{width:16px;height:16px;flex:none;color:var(--coral-dark)}
+.windows-install-guide:hover,.install-guide-contents a:hover,.install-guide-help a:hover{color:var(--coral-dark);text-decoration:underline;text-underline-offset:3px}
+.windows-install-guide:active,.install-guide-contents a:active{background:var(--coral-soft)}
+.windows-install-guide:focus-visible,.install-guide-contents a:focus-visible,.install-guide-help a:focus-visible{outline:3px solid color-mix(in srgb,var(--coral) 35%,transparent);outline-offset:3px}
+.install-guide-contents{display:flex;flex-wrap:wrap;gap:6px 10px;max-width:800px;margin:0 auto 16px}
+.install-guide-contents a{display:inline-flex;align-items:center;min-height:36px;padding:4px 9px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink-soft);font-size:13px}
+.install-guide-troubleshoot{max-width:800px;margin:auto;padding:clamp(16px,3vw,30px);border:1px solid var(--line);border-radius:12px;background:var(--surface);font-size:15px;line-height:1.7}
+.install-guide-troubleshoot h3{margin-bottom:7px;font-size:clamp(18px,2.5vw,24px);line-height:1.4}
+.install-guide-troubleshoot p,.install-guide-troubleshoot li{color:var(--ink-soft)}
+.install-guide-troubleshoot figure{max-width:546px;margin:16px 0}
+.install-guide-troubleshoot ol{margin:0 0 10px;padding-inline-start:1.4em}
+.install-guide-troubleshoot li+li{margin-top:7px}
+.install-guide-help{display:flex;flex-wrap:wrap;gap:4px 18px}
+.install-guide-help a{color:var(--coral-dark);font-weight:650}
+.install-guide-troubleshoot .install-guide-signed-note{margin-top:10px;font-size:13px}
+.install-guide-troubleshoot .install-guide-page-number{margin-top:14px;color:var(--muted);text-align:center;font-size:12px}
