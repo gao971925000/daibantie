@@ -166,7 +166,10 @@ html{scrollbar-gutter:stable}html.site-dialog-open{overflow:hidden}
 #dbt-web-preview .compact-skins .skin-switch label:before{display:none}
 #dbt-web-preview .compact-skins .skin-switch label:hover{background:#ebe6dd;color:var(--ink)}
 #dbt-web-preview .compact-skins .skin-switch label:active{background:#e5ded3}
-#dbt-web-preview .skin-swatches{flex:0 0 23px;width:23px;height:17px;border:1px solid #0002;border-radius:4px;background:linear-gradient(120deg,var(--skin-paper) 55%,var(--skin-accent) 55%)}
+/* Match ThemeSwitcher.vue: paper tile with two rounded colour blocks. */
+#dbt-web-preview .skin-swatches{flex:0 0 32px;width:32px;height:32px;display:grid;grid-template-columns:1fr 1fr;gap:3px;align-items:end;padding:5px;border:1px solid color-mix(in srgb,var(--ink) 9%,transparent);border-radius:8px;background:var(--skin-paper)}
+#dbt-web-preview .skin-swatches i{display:block;height:12px;border-radius:3px;background:var(--skin-accent)}
+#dbt-web-preview .skin-swatches i+i{background:var(--skin-ink)}
 #dbt-web-preview .compact-skins .skins .skin-image{height:385px;width:52%}
 #dbt-web-preview .compact-skins{min-height:385px}
 #dbt-web-preview .skins:has(#skin-warm-order:checked) .s-warm-order{display:block}
