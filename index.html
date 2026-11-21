@@ -1,132 +1,93 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#fbf8f2" />
-  <title>待办贴 —— 贴在桌面边缘的轻量待办</title>
-  <meta name="description" content="待办贴是贴在桌面边缘的轻量待办与便签工具，支持 Windows 7、Windows 10 / 11 和 Mac（Apple / Intel 芯片）。随手记下，安静收起，重要的事一直在手边。" />
-  <link rel="icon" href="assets/app-icon.png" />
-  <link rel="stylesheet" href="assets/css/style.css?v=20261113-windows-guide-images" />
-  <script>document.documentElement.classList.add("js");</script>
-  <link rel="stylesheet" href="assets/css/platform-downloads.css?v=20261112-domestic-guide" />
-</head>
-<body>
-  <a class="skip-link" href="#main">跳到主要内容</a>
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a class="brand" href="#top" aria-label="待办贴首页">
-        <img src="assets/app-icon.svg" alt="" width="38" height="38" />
-        <span><strong>待办贴</strong><small>DeskTodo</small></span>
-      </a>
-      <nav class="site-nav" id="siteNav" aria-label="主导航">
-        <a href="#features">功能</a><a href="#preview">界面</a><span class="nav-help-links"><a href="#questions">常见问题</a><a class="usage-guide-link" href="assets/docs/daibantie-usage-guide.pdf#view=FitH" target="_blank" rel="noopener">使用说明(建议看)</a></span>
-      </nav>
-      <div class="header-actions"><a class="button button-primary header-download" href="#top" data-open-downloads>下载</a></div>
-      <button class="nav-toggle" id="navToggle" type="button" aria-label="打开导航菜单" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
-    </div>
-  </header>
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fffefb"><title>待办贴 —— 贴在桌面边缘的轻量待办与便签</title>
+<meta name="description" content="待办贴把待办、清单与便签放在桌面边缘，支持日历、四象限、子任务、循环提醒、多种皮肤及图文记录。下载 Windows 或 Mac 版本，随用随开，专注时自动收起。">
+<link rel="canonical" href="https://www.daibantie.com/"><link rel="icon" href="assets/app-icon.svg" type="image/svg+xml"><link rel="stylesheet" href="assets/css/home.css?v=20261121">
+<style>body{margin:0;background:#fffefb}</style><script src="assets/js/home.js?v=20261121" defer></script><script src="assets/js/home-downloads.js?v=20261121" defer></script></head><body><div id="dbt-web-preview">
 
-  <main id="main">
-    <section class="hero">
-      <div class="hero-orb hero-orb-one" aria-hidden="true"></div><div class="hero-orb hero-orb-two" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow"><span aria-hidden="true"></span>Windows 7 / 10 / 11 · macOS</p>
-          <h1>待办不用藏在<br /><em>层层窗口</em>之后。</h1>
-          <p class="hero-lead">把今天的事贴在桌面边缘。需要时展开，忙碌时安静收起，让记录更近，让注意力留给正在做的事。</p>
-          <section class="platform-downloads" id="downloads" aria-labelledby="downloads-heading"><h2 id="downloads-heading">选择适合你设备的版本</h2><div class="download-tabs" role="tablist" aria-label="下载平台"><button id="download-tab-windows" type="button" role="tab" aria-controls="download-panel-windows" aria-selected="true" tabindex="0">Windows</button><button id="download-tab-mac" type="button" role="tab" aria-controls="download-panel-mac" aria-selected="false" tabindex="-1">macOS</button><button id="download-tab-domestic" type="button" role="tab" aria-controls="download-panel-domestic" aria-selected="false" tabindex="-1">国产桌面</button><button id="download-tab-mobile" type="button" role="tab" aria-controls="download-panel-mobile" aria-selected="false" tabindex="-1">移动端</button></div><div id="download-panel-windows" role="tabpanel" aria-labelledby="download-tab-windows"><div class="download-options"><a class="download-option" data-download data-download-platform="windows" href="https://api.daibantie.com/download/releases/v1.0.37/16d1b264134742ddda70a7292fe227c4db08282da9163338f297c7c96e1597fc/Daibantie-v1.0.37-x64.exe" download aria-label="下载Windows 10 / 11版"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span><strong>Windows 10 / 11</strong><small data-release-version>v1.0.37</small><span data-release-size hidden>6.00 MB</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg></a><div class="download-option" aria-disabled="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></svg><span><strong>Windows 7</strong><small>对应版本优化中</small></span></div></div><a class="windows-install-guide" href="assets/docs/install-guide.pdf?v=20261113-windows-guide-images" data-install-guide aria-haspopup="dialog" aria-controls="installGuideDialog">              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM14 3v5h5M8 12h8M8 16h8" /></svg><span>Windows 版安装流程说明</span>            </a></div><div id="download-panel-mac" role="tabpanel" aria-labelledby="download-tab-mac" hidden><div class="download-options"><a class="download-option" data-download data-download-platform="macos-aarch64" href="https://api.daibantie.com/download/releases/v1.0.33/863fa0809f6911b75580cad74de35dd0d09de59cfe5ada4423d2db699edfd521/daibantie-1.0.33-arm64.dmg" download aria-label="下载Mac · Apple 芯片版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16V5h14v11M2 19h20l-3-3H5Z"/></svg><span><strong>Mac · Apple 芯片</strong><small data-mac-release-version>v1.0.33</small><span data-mac-release-size hidden>7.08 MB</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg></a><a class="download-option" data-download data-download-platform="macos-x86_64" href="https://api.daibantie.com/download/releases/v1.0.33/6b1ceebb037ab02f5ff74271525f575871c10ea9fd7d97cde18ce410c54a9aa4/daibantie-1.0.33-x86_64.dmg" download aria-label="下载Mac · Intel 芯片版"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 16V5h14v11M2 19h20l-3-3H5Z"/></svg><span><strong>Mac · Intel 芯片</strong><small data-mac-intel-release-version>v1.0.33</small><span data-mac-intel-release-size hidden>7.60 MB</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 19h14" /></svg></a></div></div><div id="download-panel-domestic" role="tabpanel" aria-labelledby="download-tab-domestic" hidden><p class="download-empty"><strong>麒麟 KYLIN / 统信 UOS</strong><br>对应版本优化中</p></div><div id="download-panel-mobile" role="tabpanel" aria-labelledby="download-tab-mobile" hidden><p class="download-empty">Android、鸿蒙手机版的正式版本准备中，发布后将在这里提供下载。</p></div></section>
-        </div>
-        <div class="hero-product reveal">
-          <div class="product-halo" aria-hidden="true"></div>
-          <div class="product-shot"><div class="product-shot-top"><span></span><span></span><span></span><small>待办贴 · 今天</small></div><img src="assets/screenshots/app-hero.png" alt="待办贴今天待办界面，展示任务、子任务、标签与提醒" width="640" height="1200" fetchpriority="high" /></div>
-          <div class="floating-tip floating-tip-top" aria-hidden="true"><b>贴边收起</b><span>不打断当前工作</span></div>
-          <div class="floating-tip floating-tip-bottom" aria-hidden="true"><b>本机保存</b><span>内容留在你的电脑</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="trust-strip" aria-label="产品特点"><div class="container trust-grid">
-      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.9 8.1 7 9.5 4.1-1.4 7-4.9 7-9.5V6zM9 12l2 2 4-4" /></svg><span><b>数据本机保存</b><small>待办和便签默认不上传</small></span></div>
-      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5h14v14H5zM8 9h8M8 13h5" /></svg><span><b>小面板，不占桌面</b><small>贴在侧边，随用随开</small></span></div>
-      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v9l5 3M4.9 5.6A9 9 0 1 0 12 3" /></svg><span><b>打开就能记录</b><small>减少进入复杂页面的成本</small></span></div>
-    </div></section>
-
-    <section class="section features" id="features"><div class="container">
-      <header class="section-heading reveal"><p class="section-kicker">刚刚好的功能</p><h2>小面板，也能把事情理清楚</h2><p>围绕每天真正会用到的记录、安排和提醒设计，不把复杂项目管理塞进你的桌面。</p></header>
-      <div class="feature-layout">
-        <article class="feature feature-large reveal"><span class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v3m10-3v3M4 9h16M5 5h14a1 1 0 0 1 1 1v13H4V6a1 1 0 0 1 1-1Z" /></svg></span><div><p class="feature-number">01</p><h3>今天、本周、本月，安排清楚</h3><p>按时间查看待办，未安排的事也有独立入口；过期事项可以一键安排到今天。</p></div><div class="mini-calendar" aria-hidden="true"><span>今天</span><b>10</b><small>星期四</small><i></i><i></i><i></i></div></article>
-        <article class="feature reveal"><span class="feature-icon green"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7h14M5 12h9M5 17h11M3 7h.01M3 12h.01M3 17h.01" /></svg></span><p class="feature-number">02</p><h3>任务拆成更小的步骤</h3><p>子任务可以独立完成、设置日期和提醒，复杂事项也能轻松推进。</p></article>
-        <article class="feature reveal"><span class="feature-icon blue"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" /></svg></span><p class="feature-number">03</p><h3>提醒在合适的时候出现</h3><p>支持具体分钟和稍后提醒，不让重要事项被安静地忘掉。</p></article>
-        <article class="feature feature-wide reveal"><span class="feature-icon violet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5" /></svg></span><div><p class="feature-number">04</p><h3>便签支持文字、链接和图片</h3><p>把临时想法、会议片段和截图放在同一张便签里，双击图片即可专注预览。</p></div><div class="note-sample" aria-hidden="true"><span>周三评审要点</span><p>1. 首页层级再收一版</p><p>2. 下周发到群里</p><i></i></div></article>
-        <article class="feature reveal"><span class="feature-icon amber"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 16 0A8 8 0 0 0 4 12Zm8-5v5l3 2" /></svg></span><p class="feature-number">05</p><h3>换肤与透明度</h3><p>多套风格自由切换，也能调节面板透明度，让它更自然地融入桌面。</p></article>
-      </div>
-    </div></section>
-
-    <section class="section preview-section" id="preview"><div class="container">
-      <header class="section-heading section-heading-left reveal"><p class="section-kicker">真实界面</p><h2>轻，但不是简单凑合</h2><p>待办、周视图和便签采用同一套视觉语言，在有限的面板里保持清晰。</p></header>
-      <div class="preview-grid">
-        <figure class="preview-card preview-tall reveal"><div class="preview-media"><img src="assets/screenshots/app-hero.png?v=20260914" alt="待办贴今天列表界面" loading="lazy" /></div><figcaption><span><b>今天</b><small>专注当前真正要做的事</small></span><i>01</i></figcaption></figure>
-        <figure class="preview-card reveal"><div class="preview-media"><img src="assets/screenshots/shot-week.png?v=20260914" alt="待办贴本周视图" loading="lazy" /></div><figcaption><span><b>本周</b><small>七天安排纵向查看</small></span><i>02</i></figcaption></figure>
-        <figure class="preview-card reveal"><div class="preview-media"><img src="assets/screenshots/shot-notes.png?v=20260914" alt="待办贴便签界面" loading="lazy" /></div><figcaption><span><b>便签</b><small>文字、链接与截图一起记录</small></span><i>03</i></figcaption></figure>
-      </div>
-    </div></section>
-
-    <section class="section rhythm-section"><div class="container rhythm-grid">
-      <div class="rhythm-copy reveal"><p class="section-kicker">桌面工作节奏</p><h2>记下，然后继续手头的事</h2><p>待办贴不要求你先整理出完整计划。一个念头出现时先记下，稍后再安排日期、提醒和子任务。</p></div>
-      <ol class="rhythm-steps reveal"><li><span>1</span><div><b>随手记下</b><small>想到就记下，稍后再安排日期和提醒。</small></div></li><li><span>2</span><div><b>需要时展开</b><small>补充子任务、提醒、标签和详情。</small></div></li><li><span>3</span><div><b>完成后收起</b><small>面板回到屏幕边缘，不打断当前窗口。</small></div></li></ol>
-    </div></section>
-
-    <section class="section questions" id="questions"><div class="container questions-grid">
-      <header class="section-heading section-heading-left reveal"><p class="section-kicker">常见问题</p><h2>下载之前，你可能想知道</h2></header>
-      <div class="faq-list reveal">
-        <details><summary>待办和便签保存在哪里？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>待办和便签默认保存在当前电脑的本机数据目录中。重要内容建议定期通过应用内“数据”页面导出备份。</p></details>
-        <details><summary>支持哪些系统？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>当前提供 Windows 10 / 11（64 位）独立安装包，以及 Mac 的 Apple 芯片（M 系列）和 Intel 芯片两种 DMG 安装包。Windows 7、麒麟和统信 UOS 对应版本优化中。</p></details>
-        <details><summary>Mac 版如何安装？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>下载 Mac 版 DMG，打开后将“待办贴”拖入“应用程序”，再从“应用程序”启动。下载前请在苹果菜单的“关于本机”中查看芯片或处理器：M 系列选择 Apple 芯片版，Intel 处理器选择 Intel 芯片版。下载区的安装流程 PDF 为 Windows 版说明。</p></details>
-        <details id="linux-install-help"><summary>麒麟和统信 UOS 版如何安装？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>对应版本优化中</p></details><details><summary>升级会覆盖原有内容吗？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>正常覆盖安装不会清除本机数据。重要内容仍建议定期通过应用内“数据”页面导出保存。</p></details>
-        <details><summary>目前需要付费吗？<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 9 5 5 5-5" /></svg></summary><p>当前处于免费公测阶段。未来如调整为订阅服务，会提前向用户说明。</p></details>
-      </div>
-    </div></section>
-
-  </main>
-
-  <footer class="site-footer"><div class="container footer-grid"><a class="brand footer-brand" href="#top"><img src="assets/app-icon.svg" alt="" width="34" height="34" /><span><strong>待办贴</strong><small>DeskTodo</small></span></a><p>贴在桌面边缘的轻量待办与便签。</p><div><a href="#features">功能</a><a href="#preview">界面</a><a href="mailto:admin@daibantie.com">联系我们</a></div><small>© 2026 待办贴 · 数据默认保存在你的电脑</small></div></footer>
-  <dialog class="install-guide-dialog" id="installGuideDialog" aria-labelledby="installGuideTitle" aria-describedby="installGuideDescription">
-    <header class="install-guide-header">
-      <div><h2 id="installGuideTitle">Windows 版安装流程说明</h2><p id="installGuideDescription">按弹窗标题查找对应步骤。</p></div>
-      <a class="install-guide-download" href="assets/docs/install-guide.pdf?v=20261113-windows-guide-images" download="待办贴 Windows 安装流程说明.pdf">下载 PDF</a>
-      <button class="install-guide-close" type="button" aria-label="关闭安装流程说明" autofocus><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg></button>
-    </header>
-    <div class="install-guide-pages" tabindex="0" role="region" aria-label="安装流程说明正文">
-      <nav class="install-guide-contents" aria-label="按提示查找">
-        <a href="#install-guide-download-step">下载安装</a>
-        <a href="#install-guide-smartscreen">Windows 已保护你的电脑</a>
-        <a href="#install-guide-smart-app-control">智能应用控制已阻止</a>
-      </nav>
-      <figure id="install-guide-download-step" tabindex="-1"><img data-src="assets/docs/install-guide/page-1.png?v=20261113-windows-guide-images" width="1156" height="1496" alt="下载安装包。选择适合的 Windows 版本，从资源管理器打开安装包。如果 Edge 提示通常不会下载，核对来源后打开查看更多，在下载项菜单中选择保留。若浏览器明确报告文件有威胁，请停止并联系我们。" /><figcaption>第 1 页 / 共 4 页</figcaption></figure>
-      <figure id="install-guide-smartscreen" tabindex="-1"><img data-src="assets/docs/install-guide/page-2.png?v=20261113-windows-guide-images" width="1156" height="1496" alt="Windows 已保护你的电脑。确认从官网下载后，若 SmartScreen 提供这些选项，点击更多信息，核对文件名，再点仍要运行。" /><figcaption>第 2 页 / 共 4 页</figcaption></figure>
-      <section class="install-guide-troubleshoot" id="install-guide-smart-app-control" aria-labelledby="smartAppControlTitle" tabindex="-1">
-        <h3 id="smartAppControlTitle">智能应用控制已阻止可能不安全的应用</h3>
-        <p>Windows 11 的智能应用控制会在安装向导打开前拦截它无法验证的程序。这个提示无法单独放行待办贴。</p>
-        <figure><img data-src="assets/docs/install-guide/smart-app-control.png?v=20261113-windows-guide-images" width="546" height="376" alt="Windows 11 的实际拦截图。标题为智能应用控制已阻止可能不安全的应用，正文提示无法验证发布者。" /><figcaption>点击左下角的确认按钮可关闭提示。</figcaption></figure>
-        <ol>
-          <li><strong>在个人电脑上选择关闭智能应用控制。</strong> 在「开始」菜单搜索「Windows 安全中心」，打开「应用和浏览器控制 → 智能应用控制设置」，选择「关」。随后双击官网安装包，按向导安装。</li>
-          <li><strong>安装后检查防护状态。</strong>回到同一页面，如果能选「开」，可重新开启并尝试启动待办贴。重新开启后，系统仍可能拦截未签名的程序。</li>
-        </ol>
-        <p class="install-guide-page-number">第 3 页 / 共 4 页</p>
-        <h4>Windows 安全中心入口示意</h4>
-        <p>以下两张图为 Windows 10 设置界面。智能应用控制仅适用于 Windows 11，请按上面的路径操作。</p>
-        <figure><img data-src="assets/docs/install-guide/windows-update-security.png?v=20261113-windows-guide-images" width="1000" height="790" alt="Windows 10 设置首页，红框标出更新和安全。" /><figcaption>Windows 10 设置首页中的「更新和安全」</figcaption></figure>
-        <figure><img data-src="assets/docs/install-guide/windows-security-entry.png?v=20261113-windows-guide-images" width="1000" height="790" alt="Windows 10 设置的保护区域，红框标出 Windows 安全中心和应用和浏览器控制。" /><figcaption>Windows 安全中心中的「应用和浏览器控制」</figcaption></figure>
-        <p class="install-guide-page-number">第 4 页 / 共 4 页</p>
-      </section>
-    </div>
-  </dialog>
-  <script src="assets/js/main.js?v=20261113-windows-guide-images"></script>
-  <script src="assets/js/platform-downloads.js?v=20261108-download-highlight-1"></script>
-</body>
-</html>
+<header class="wrap navbar">
+<a class="brand" href="#dbt-top"><img alt="待办贴 Logo" decoding="async" height="80" loading="eager" src="assets/home-20261121/logo.webp" width="80"/>待办贴 <small>DeskTodo</small></a>
+<nav aria-label="主导航" class="navlinks"><a href="#features">功能</a><a href="#appearance">界面</a><button command="show-modal" commandfor="usage-guide">使用说明</button><a href="#faq">常见问题</a><a class="action primary" href="#download">下载</a></nav>
+</header>
+<main id="dbt-top">
+<section class="hero wrap">
+<div class="hero-grid">
+<div class="hero-copy"><div class="eyebrow">桌面待办 · 便签 · 清单</div><h1>把要做的事，<br/>放在<em>手边。</em></h1><p>待办和便签，贴在桌面边缘。<br/>需要时展开，专注时安静收起。</p>
+<div aria-label="首屏版本选择" class="platform-picker" id="download">
+<input checked="" class="sr radio-choice" id="platform-win" name="download-platform" type="radio"/><input class="sr radio-choice" id="platform-mac" name="download-platform" type="radio"/><input class="sr radio-choice" id="platform-linux" name="download-platform" type="radio"/><input class="sr radio-choice" id="platform-mobile" name="download-platform" type="radio"/>
+<div class="platform-tabs"><label for="platform-win">Windows</label><label for="platform-mac">macOS</label><label for="platform-linux">国产桌面</label><label for="platform-mobile">移动端</label></div>
+<div class="platform-content">
+<div class="platform-panel platform-win"><div class="platform-cards"><a aria-label="下载 Windows 10 / 11" class="platform-card" data-download="" data-download-platform="windows" download="Daibantie-v1.0.37-x64.exe" href="https://api.daibantie.com/download/releases/v1.0.37/16d1b264134742ddda70a7292fe227c4db08282da9163338f297c7c96e1597fc/Daibantie-v1.0.37-x64.exe" rel="noopener"><strong>Windows 10 / 11</strong><span><span data-release-version="">v1.0.37</span> · x64</span><span aria-hidden="true" class="download-icon"></span><span data-release-size="" hidden="">6.00 MB</span></a><div aria-disabled="true" class="platform-card unavailable"><strong>Windows 7</strong><span>对应版本优化中</span></div></div></div>
+<div class="platform-panel platform-mac"><div class="platform-cards"><a aria-label="下载 Mac · Apple 芯片" class="platform-card" data-download="" data-download-platform="macos-aarch64" download="daibantie-1.0.33-arm64.dmg" href="https://api.daibantie.com/download/releases/v1.0.33/863fa0809f6911b75580cad74de35dd0d09de59cfe5ada4423d2db699edfd521/daibantie-1.0.33-arm64.dmg" rel="noopener"><strong>Mac · Apple 芯片</strong><span><span data-mac-release-version="">v1.0.33</span> · M 系列</span><span aria-hidden="true" class="download-icon"></span><span data-mac-release-size="" hidden="">7.08 MB</span></a><a aria-label="下载 Mac · Intel 芯片" class="platform-card" data-download="" data-download-platform="macos-x86_64" download="daibantie-1.0.33-x86_64.dmg" href="https://api.daibantie.com/download/releases/v1.0.33/6b1ceebb037ab02f5ff74271525f575871c10ea9fd7d97cde18ce410c54a9aa4/daibantie-1.0.33-x86_64.dmg" rel="noopener"><strong>Mac · Intel 芯片</strong><span><span data-mac-intel-release-version="">v1.0.33</span> · Intel</span><span aria-hidden="true" class="download-icon"></span><span data-mac-intel-release-size="" hidden="">7.60 MB</span></a></div></div>
+<div class="platform-panel platform-linux"><div class="platform-status"><strong>麒麟 KYLIN / 统信 UOS</strong><p>对应版本优化中，准备好后会在这里提供下载。</p></div></div>
+<div class="platform-panel platform-mobile"><div class="platform-status"><strong>Android / 鸿蒙</strong><p>手机版正式版本准备中，发布后将在这里提供下载。</p></div></div>
+</div>
+</div>
+</div>
+<figure class="hero-visual main-panel-figure"><img alt="待办贴主面板完整实图，展示日期列表、清单页签、子任务与进度" class="panel-shot" decoding="async" fetchpriority="high" height="1224" loading="eager" src="assets/home-20261121/today-warm.webp" width="1148"/></figure>
+</div>
+</section>
+<section class="compact-features wrap" id="features">
+<div class="compact-section-head"><div><div class="eyebrow">重点功能</div><h2>计划、记录和提醒，放在一起。</h2></div></div>
+<div class="compact-gallery" id="appearance">
+<input checked="" class="sr radio-choice" id="feature-calendar" name="feature-view" type="radio"/><input class="sr radio-choice" id="feature-note" name="feature-view" type="radio"/><input class="sr radio-choice" id="feature-quadrant" name="feature-view" type="radio"/><input class="sr radio-choice" id="feature-skins" name="feature-view" type="radio"/>
+<div aria-label="功能界面选择" class="compact-tabs"><label for="feature-calendar">日历与清单</label><label for="feature-note">便签与资料</label><label for="feature-quadrant">四象限</label><label for="feature-skins">皮肤风格</label></div>
+<div class="compact-showcase">
+<article class="compact-view compact-calendar"><div class="compact-description"><h3>把今天和接下来的一周排清楚。</h3><p>今天、本周、本月、待安排，按时间看计划。不同项目分到清单，常用清单固定在侧边。</p><div class="feature-tags"><span>子任务</span><span>完成进度</span><span>清单页签</span></div></div><div class="compact-stage"><img alt="真实日历视图，按周展示待办和跨天安排" decoding="async" height="1080" loading="lazy" src="assets/home-20261121/calendar.webp" width="1560"/></div></article>
+<article class="compact-view compact-note"><div class="compact-description"><h3>随手记下来，也能认真整理。</h3><p>普通便签整理资料，时间轴记录过程。支持标题折叠、大纲、表格、图片和附件，用 @ 关联待办与便签。</p><div class="feature-tags"><span>富文本</span><span>表格与附件</span><span>时间轴记录</span></div></div><div class="compact-stage note-stage"><img alt="真实便签界面，包含标题、表格和文档附件" decoding="async" height="1384" loading="lazy" src="assets/home-20261121/note-warm.webp" width="1240"/></div></article>
+<article class="compact-view compact-quadrant"><div class="compact-description"><h3>先做重要的，再处理其余的。</h3><p>按重要与紧急整理事项，和列表、日历查看的是同一份待办。优先级、日期和子任务，都能继续维护。</p><div class="feature-tags"><span>重要与紧急</span><span>自定义归类</span><span>筛选范围</span></div></div><div class="compact-stage"><img alt="真实四象限待办界面" decoding="async" height="1190" loading="lazy" src="assets/home-20261121/quadrant.webp" width="1400"/></div></article>
+<article class="compact-view compact-skins"><div class="compact-description"><h3>选一套喜欢的，放在桌面也舒服。</h3><p>多套皮肤自由切换，再调一下面板透明度，适配自己的桌面。</p><div class="skins"><input checked="" class="sr radio-choice" id="skin-warm" name="skin" type="radio"/><input class="sr radio-choice" id="skin-sea" name="skin" type="radio"/><input class="sr radio-choice" id="skin-matcha" name="skin" type="radio"/><input class="sr radio-choice" id="skin-dark" name="skin" type="radio"/><div class="skin-switch"><label for="skin-warm">暖色</label><label for="skin-sea">海盐蓝</label><label for="skin-matcha">抹茶</label><label for="skin-dark">深色</label></div><div class="skin-image"><img alt="暖色皮肤" class="s-warm" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-warm.webp" width="1148"/><img alt="海盐蓝皮肤" class="s-sea" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-sea.webp" width="1148"/><img alt="抹茶皮肤" class="s-matcha" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-matcha.webp" width="1148"/><img alt="深色皮肤" class="s-dark" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-dark.webp" width="1148"/></div></div></div></article>
+</div>
+</div>
+<div class="compact-benefits"><article><h3>贴边随用随开</h3><p>支持左右、顶部贴边，可保留页签或完全隐藏；页签宽度也能拖动调整。</p></article><article><h3>按你的节奏提醒</h3><p>每天、指定星期或月份，自定义循环，一天可设置多个提醒时间。</p></article><article><h3>方便记录，也方便整理</h3><p>文字识别、快速录音、检索与导出；重要内容可在本机导出备份。</p></article></div>
+</section>
+<section class="compact-help-band" id="faq"><div class="wrap compact-help"><div><h2>第一次用，从贴边开始。</h2><p>怎么贴边、怎么收起，图文一步步说明。</p><button class="action" command="show-modal" commandfor="usage-guide">打开图文使用说明</button></div><div class="faq-list"><details><summary>待办和便签保存在哪里？</summary><p>默认保存在当前电脑。在「设置 → 数据」可导出备份。</p></details><details><summary>覆盖安装会清除已有内容吗？</summary><p>正常覆盖安装不会清除本机数据，重要内容仍建议先导出备份。</p></details><details><summary>收起后，怎么重新打开？</summary><p>保留页签时点击页签；完全隐藏时移到对应屏幕边缘。也可以点击系统托盘中的待办贴图标。</p></details></div></div></section>
+</main>
+<footer class="business-footer"><div class="wrap footer-content">
+<div class="footer-main"><a class="brand" href="#dbt-top"><img alt="" decoding="async" height="80" loading="eager" src="assets/home-20261121/logo.webp" width="80"/>待办贴</a><nav aria-label="帮助与法律信息" class="footer-navigation"><button command="show-modal" commandfor="install-guide">安装说明</button><button command="show-modal" commandfor="usage-guide">使用说明</button><a href="mailto:admin@daibantie.com">联系我们</a></nav></div>
+<div class="footer-records"><p>© 2026 待办贴 · 桌面待办与便签</p></div>
+</div></footer>
+<dialog aria-labelledby="usage-title" closedby="any" id="usage-guide">
+<div class="reader-head"><div><h2 id="usage-title">待办贴使用说明</h2><p>按功能查看图文步骤</p></div><button aria-label="关闭使用说明" class="close" command="close" commandfor="usage-guide">×</button></div>
+<input checked="" class="sr radio-choice" id="guide-edge" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-todo" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-list" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-note" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-remind" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-calendar" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-skin" name="guide-chapter" type="radio"/><input class="sr radio-choice" id="guide-data" name="guide-chapter" type="radio"/>
+<div class="reader-layout"><nav aria-label="使用说明目录" class="reader-nav"><strong>使用目录</strong><label for="guide-edge">贴边与自动收起</label><label for="guide-todo">添加与整理待办</label><label for="guide-list">清单与侧边页签</label><label for="guide-note">便签与附件</label><label for="guide-remind">提醒与重复</label><label for="guide-calendar">日历与四象限</label><label for="guide-skin">皮肤与透明度</label><label for="guide-data">保存、备份与找回</label></nav><div class="reader-content">
+<section class="guide-chapter g-edge"><div class="path">头像 → 设置 → 面板设置 → 贴边方式</div><h3>把面板贴到习惯的屏幕边缘</h3><p>先选贴边方式，再开启自动收起。留页签方便切换，完全隐藏让桌面更干净。</p><ol><li><strong>选择一种贴边方式</strong>点击左上角头像，进入「设置 → 面板设置」。选择左侧、右侧或顶部，以及是否保留页签。</li><li><strong>移动到对应边缘</strong>拖动面板顶部空白处，放到目标屏幕的对应边缘。外接显示器时，先移到你要使用的屏幕。</li><li><strong>开启自动收起</strong>点击主面板右上角、图钉左侧的「自动收起」按钮。离开面板后，面板回到边缘。</li></ol><img alt="面板设置中六种贴边方式的实际选项" class="guide-img" decoding="async" height="440" loading="lazy" src="assets/home-20261121/dock-choices.webp" width="634"/><p class="hint">重新展开：保留页签时点击页签；完全隐藏时，鼠标移到对应屏幕边缘停留。置顶控制窗口层级，与自动收起分别设置。</p></section>
+<section class="guide-chapter g-todo"><div class="path">主面板 → 今天 / 本周 / 本月 / 待安排</div><h3>想到就记，稍后再整理</h3><ol><li><strong>输入后按 Enter 新建</strong>在待办输入框输入标题；Shift + Enter 可以换行。</li><li><strong>安排日期、提醒和优先级</strong>打开待办详情，补充日期、详情备注、标签或子任务。</li><li><strong>按需要使用文字识别</strong>输入日期、时间等内容后，在识别浮层确认采用的字段；也可以取消识别或保留标题原文。</li></ol><img alt="主面板输入框、待办和子任务" class="guide-img" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-warm.webp" width="1148"/><p class="hint">「设置 → 个性化」中可以调整列表排序、自动编号、详情展示等。</p></section>
+<section class="guide-chapter g-list"><div class="path">主面板 → 清单</div><h3>把不同项目分开，又随手能找</h3><ol><li><strong>创建清单</strong>打开「清单」，选择新建清单并填写名称。</li><li><strong>将待办放入清单</strong>在待办详情设置「所属清单」；无所属清单时为普通待办。</li><li><strong>固定常用清单</strong>在清单管理中点击固定到侧边按钮，生成同名页签。点击页签即可进入该清单。</li></ol><img alt="工作项目与日常安排清单页签" class="guide-img" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-warm.webp" width="1148"/><p class="hint">固定到侧边是同一份清单的入口，不会复制清单或待办。</p></section>
+<section class="guide-chapter g-note"><div class="path">侧边「＋」→ 新建便签</div><h3>从随手记，到一张有条理的便签</h3><ol><li><strong>选择普通便签或时间轴便签</strong>普通便签适合整理长内容；时间轴便签按时间记录每一条内容。</li><li><strong>用标题、表格和附件整理资料</strong>普通便签中使用格式工具调整标题与正文。通过「＋」插入图片、附件或表格。</li><li><strong>折叠与关联</strong>鼠标悬浮标题时点击左侧箭头折叠章节；通过右侧大纲定位。输入 @ 可以选择待办或便签进行关联。</li></ol><img alt="真实便签中的标题、关联、表格与文档附件" class="guide-img" decoding="async" height="1384" loading="lazy" src="assets/home-20261121/note-warm.webp" width="1240"/><p class="hint">时间轴记录可以生成待办；不会把整张便签中的全部记录自动变成待办。</p></section>
+<section class="guide-chapter g-remind"><div class="path">待办详情 → 提醒 → 高级提醒</div><h3>一次提醒，或者按规律循环</h3><ol><li><strong>先选择首次提醒时间</strong>在普通提醒页面选择日期、时间；可用的快捷选项会按当前安排日期判断。</li><li><strong>需要多次提醒时，进入高级提醒</strong>设置每天、指定星期、指定月份与日期，或者自定义间隔。可以选择多个提醒时间。</li><li><strong>确认并保存</strong>核对接下来的提醒时间与结束条件，再点击设置提醒。</li></ol><img alt="高级提醒中的循环时间设置" class="guide-img" decoding="async" height="420" loading="lazy" src="assets/home-20261121/reminder-cycle.webp" width="480"/><p class="hint">重复待办用于按规则生成下一次待办；循环提醒用于同一条待办的多次通知，按实际需求分别设置。</p></section>
+<section class="guide-chapter g-calendar"><div class="path">主面板「…」→ 日历；或「四象限」</div><h3>用时间和优先级，看同一份待办</h3><ol><li><strong>日历中看日期安排</strong>切换日、周或月，查看对应时间的事项。</li><li><strong>四象限中看轻重缓急</strong>通过主面板的「四象限」按钮进入；在设置中调整显示范围与归类规则。</li><li><strong>回到列表继续处理</strong>视图变化不会生成多份待办，在一处修改后，其他视图查看的是同一条内容。</li></ol><img alt="真实周日历界面" class="guide-img" decoding="async" height="1080" loading="lazy" src="assets/home-20261121/calendar.webp" width="1560"/></section>
+<section class="guide-chapter g-skin"><div class="path">主面板右上角 → 衣服图标</div><h3>选皮肤，也调一下面板透明度</h3><ol><li><strong>打开外观设置</strong>点击右上角衣服图标，选择喜欢的皮肤。</li><li><strong>调整透明度</strong>通过透明度滑块观察效果，选择自己看得清、也舒服的程度。</li><li><strong>字体大小单独设置</strong>在「设置 → 面板设置」调整字体、正文字号和界面字号。</li></ol><img alt="海盐蓝主题的待办面板" class="guide-img" decoding="async" height="1224" loading="lazy" src="assets/home-20261121/today-sea.webp" width="1148"/></section>
+<section class="guide-chapter g-data"><div class="path">头像 → 设置 → 数据</div><h3>重要内容，记得留一份备份</h3><ol><li><strong>先导出备份</strong>在数据页面选择导出备份，把文件保存到便于找到的位置。</li><li><strong>换机或恢复时导入</strong>使用应用内导入入口，先核对说明再进行恢复。</li><li><strong>面板找不到时</strong>先点击系统托盘中的待办贴图标。也可在「面板设置」恢复默认大小和位置。</li></ol><img alt="数据页面中的备份和恢复入口" class="guide-img" decoding="async" height="660" loading="lazy" src="assets/home-20261121/data.webp" width="620"/><p class="hint">本机保存不等于自动云端备份。重装系统或清理磁盘前，请先把重要备份放到其他安全位置。</p></section>
+</div></div>
+</dialog>
+<dialog aria-labelledby="install-title" closedby="any" id="install-guide"><div class="reader-head"><div><h2 id="install-title">Windows 安装流程说明</h2><p>按实际出现的提示，查看对应步骤</p></div><button aria-label="关闭安装说明" class="close" command="close" commandfor="install-guide">×</button></div><div class="install-body"><p class="download-fallback">下载线路无法访问时，可使用官网备用下载：<a data-download-backup="windows" download="Daibantie-v1.0.37-x64.exe" href="https://www.daibantie.com/download/releases/v1.0.37/16d1b264134742ddda70a7292fe227c4db08282da9163338f297c7c96e1597fc/Daibantie-v1.0.37-x64.exe">Windows 10 / 11</a> · <a data-download-backup="macos-aarch64" download="daibantie-1.0.33-arm64.dmg" href="https://www.daibantie.com/download/releases/v1.0.33/863fa0809f6911b75580cad74de35dd0d09de59cfe5ada4423d2db699edfd521/daibantie-1.0.33-arm64.dmg">Mac · Apple 芯片</a> · <a data-download-backup="macos-x86_64" download="daibantie-1.0.33-x86_64.dmg" href="https://www.daibantie.com/download/releases/v1.0.33/6b1ceebb037ab02f5ff74271525f575871c10ea9fd7d97cde18ce410c54a9aa4/daibantie-1.0.33-x86_64.dmg">Mac · Intel 芯片</a></p>
+<nav aria-label="按提示查找" class="install-guide-contents">
+<a href="#install-guide-download-step">下载安装</a>
+<a href="#install-guide-smartscreen">Windows 已保护你的电脑</a>
+<a href="#install-guide-smart-app-control">智能应用控制已阻止</a>
+</nav>
+<figure id="install-guide-download-step" tabindex="-1"><img alt="下载安装包。选择适合的 Windows 版本，从资源管理器打开安装包。如果 Edge 提示通常不会下载，核对来源后打开查看更多，在下载项菜单中选择保留。若浏览器明确报告文件有威胁，请停止并联系我们。" decoding="async" height="1496" loading="lazy" src="assets/docs/install-guide/page-1.png?v=20261113-windows-guide-images" width="1156"/><figcaption>第 1 页 / 共 4 页</figcaption></figure>
+<figure id="install-guide-smartscreen" tabindex="-1"><img alt="Windows 已保护你的电脑。确认从官网下载后，若 SmartScreen 提供这些选项，点击更多信息，核对文件名，再点仍要运行。" decoding="async" height="1496" loading="lazy" src="assets/docs/install-guide/page-2.png?v=20261113-windows-guide-images" width="1156"/><figcaption>第 2 页 / 共 4 页</figcaption></figure>
+<section aria-labelledby="smartAppControlTitle" class="install-guide-troubleshoot" id="install-guide-smart-app-control" tabindex="-1">
+<h3 id="smartAppControlTitle">智能应用控制已阻止可能不安全的应用</h3>
+<p>Windows 11 的智能应用控制会在安装向导打开前拦截它无法验证的程序。这个提示无法单独放行待办贴。</p>
+<figure><img alt="Windows 11 的实际拦截图。标题为智能应用控制已阻止可能不安全的应用，正文提示无法验证发布者。" decoding="async" height="376" loading="lazy" src="assets/docs/install-guide/smart-app-control.png?v=20261113-windows-guide-images" width="546"/><figcaption>点击左下角的确认按钮可关闭提示。</figcaption></figure>
+<ol>
+<li><strong>在个人电脑上选择关闭智能应用控制。</strong> 在「开始」菜单搜索「Windows 安全中心」，打开「应用和浏览器控制 → 智能应用控制设置」，选择「关」。随后双击官网安装包，按向导安装。</li>
+<li><strong>安装后检查防护状态。</strong>回到同一页面，如果能选「开」，可重新开启并尝试启动待办贴。重新开启后，系统仍可能拦截未签名的程序。</li>
+</ol>
+<p class="install-guide-page-number">第 3 页 / 共 4 页</p>
+<h4>Windows 安全中心入口示意</h4>
+<p>以下两张图为 Windows 10 设置界面。智能应用控制仅适用于 Windows 11，请按上面的路径操作。</p>
+<figure><img alt="Windows 10 设置首页，红框标出更新和安全。" decoding="async" height="790" loading="lazy" src="assets/docs/install-guide/windows-update-security.png?v=20261113-windows-guide-images" width="1000"/><figcaption>Windows 10 设置首页中的「更新和安全」</figcaption></figure>
+<figure><img alt="Windows 10 设置的保护区域，红框标出 Windows 安全中心和应用和浏览器控制。" decoding="async" height="790" loading="lazy" src="assets/docs/install-guide/windows-security-entry.png?v=20261113-windows-guide-images" width="1000"/><figcaption>Windows 安全中心中的「应用和浏览器控制」</figcaption></figure>
+<p class="install-guide-page-number">第 4 页 / 共 4 页</p>
+</section>
+</div></dialog>
 
 
 
 
+</div>
+</body></html>
