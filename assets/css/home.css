@@ -286,3 +286,41 @@ html{scrollbar-gutter:stable}html.site-dialog-open{overflow:hidden}
 #dbt-web-preview .guide-terms>div{grid-template-columns:1fr;gap:2px}
 #dbt-web-preview .guide-table th,#dbt-web-preview .guide-table td{padding:8px}
 }
+
+/* Make the existing installation and usage entrances easier to find. */
+#dbt-web-preview .windows-download{gap:12px}
+#dbt-web-preview .windows-install-link,
+#dbt-web-preview :is(.navlinks,.compact-help,.footer-navigation) .guide-entry{
+ display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;
+ padding:11px 16px;border:1px solid #e5b19b;border-radius:9px;background:#fbebe2;
+ color:var(--orange-deep);font-size:16px;font-weight:650;line-height:1.5;text-align:center;
+ text-decoration:none;transition:background .15s,border-color .15s,color .15s;
+}
+#dbt-web-preview .windows-install-link{align-self:stretch;width:100%;font-size:15px;padding-inline:12px}
+#dbt-web-preview .windows-install-link>span:first-child{min-width:0}
+#dbt-web-preview .windows-install-link>span[aria-hidden]{flex-shrink:0;font-size:20px;line-height:1}
+#dbt-web-preview .windows-install-link:not(:disabled):hover,
+#dbt-web-preview :is(.navlinks,.compact-help,.footer-navigation) .guide-entry:not(:disabled):hover{
+ background:#f7ddcd;border-color:var(--orange);color:var(--orange-deep);text-decoration:none;
+}
+#dbt-web-preview .windows-install-link:not(:disabled):active,
+#dbt-web-preview :is(.navlinks,.compact-help,.footer-navigation) .guide-entry:not(:disabled):active{
+ background:#f0ccba;border-color:var(--orange-deep);color:var(--orange-deep);
+}
+#dbt-web-preview .windows-install-link:focus-visible,
+#dbt-web-preview :is(.navlinks,.compact-help,.footer-navigation) .guide-entry:focus-visible{
+ outline:2px solid var(--orange-deep);outline-offset:3px;
+}
+#dbt-web-preview .windows-install-link:disabled,
+#dbt-web-preview :is(.navlinks,.compact-help,.footer-navigation) .guide-entry:disabled{
+ opacity:.5;cursor:default;
+}
+@media(max-width:760px){
+ #dbt-web-preview .navbar{gap:12px}
+ #dbt-web-preview .navlinks{gap:8px}
+ #dbt-web-preview .navlinks .guide-entry{font-size:15px;min-height:44px;padding:8px 10px;white-space:nowrap}
+ #dbt-web-preview .windows-install-link{font-size:15px}
+}
+@media(max-width:360px){
+ #dbt-web-preview .navlinks .guide-entry{font-size:14px;padding-inline:8px}
+}
