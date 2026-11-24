@@ -87,8 +87,8 @@
     }).then(function (release) {
       if (!accepted(release, target)) throw new Error('Wrong download platform');
       var path = new URL(release.downloadUrl).pathname;
-      root.querySelectorAll('[data-download-platform="' + target.id + '"]').forEach(function (link) { link.href = 'https://api.daibantie.com' + path; });
-      root.querySelectorAll('[data-download-backup="' + target.id + '"]').forEach(function (link) { link.href = 'https://www.daibantie.com' + path; });
+      root.querySelectorAll('[data-download-platform="' + target.id + '"]').forEach(function (link) { link.href = (target.id === 'windows' ? 'https://www.daibantie.com' : 'https://api.daibantie.com') + path; });
+      root.querySelectorAll('[data-download-backup="' + target.id + '"]').forEach(function (link) { link.href = (target.id === 'windows' ? 'https://api.daibantie.com' : 'https://www.daibantie.com') + path; });
       root.querySelectorAll(target.version).forEach(function (node) { node.textContent = 'v' + release.version; });
       if (target.size && typeof release.fileSizeBytes === 'number') root.querySelectorAll(target.size).forEach(function (node) { node.textContent = (release.fileSizeBytes / 1048576).toFixed(2) + ' MB'; });
     }).catch(function () { /* Keep the verified, platform-specific static links. */ });

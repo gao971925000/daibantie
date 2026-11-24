@@ -39,8 +39,8 @@
     }).then(function (release) {
       var download = accepted(release, target);
       if (!download) return;
-      root.querySelectorAll('[data-download-platform="' + target.id + '"]').forEach(function (link) { link.href = 'https://api.daibantie.com' + download.path; link.download = download.filename; });
-      root.querySelectorAll('[data-download-backup="' + target.id + '"]').forEach(function (link) { link.href = 'https://www.daibantie.com' + download.path; link.download = download.filename; });
+      root.querySelectorAll('[data-download-platform="' + target.id + '"]').forEach(function (link) { link.href = (target.id === 'windows' ? 'https://www.daibantie.com' : 'https://api.daibantie.com') + download.path; link.download = download.filename; });
+      root.querySelectorAll('[data-download-backup="' + target.id + '"]').forEach(function (link) { link.href = (target.id === 'windows' ? 'https://api.daibantie.com' : 'https://www.daibantie.com') + download.path; link.download = download.filename; });
       root.querySelectorAll(target.version).forEach(function (node) { node.textContent = 'v' + release.version; });
       root.querySelectorAll(target.size).forEach(function (node) { node.textContent = (release.fileSizeBytes / 1048576).toFixed(2) + ' MB'; });
     }).catch(function () {

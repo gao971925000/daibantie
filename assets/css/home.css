@@ -317,3 +317,8 @@ html{scrollbar-gutter:stable}html.site-dialog-open{overflow:hidden}
  #dbt-web-preview .navlinks{gap:12px}
  #dbt-web-preview .navlinks .guide-entry{font-size:14px;min-height:32px;padding:4px 0;white-space:nowrap}
 }
+
+/* Keep the Windows fallback directly reachable, including without JavaScript. */
+#dbt-web-preview .windows-backup-link{display:inline-flex;align-items:center;min-height:30px;padding:3px 7px;margin-top:2px;border-radius:5px;color:var(--muted);font-size:12px;text-decoration:none}
+#dbt-web-preview .windows-backup-link:hover{background:var(--cream);color:var(--orange-deep)}
+#dbt-web-preview .windows-backup-link:active{background:var(--line)}
