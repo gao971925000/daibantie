@@ -98,11 +98,19 @@
       selectGuide(guideTabs[index].getAttribute('aria-controls').slice(6), true);
     });
   }
+  var downloadHighlightTimer;
   function showDownloads(event) {
     if (event) event.preventDefault();
     var downloads = document.getElementById('download');
     var top = innerWidth >= 600 ? 0 : Math.max(0, downloads.getBoundingClientRect().top + scrollY - 20);
     window.scrollTo({ top: top, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+    downloads.classList.add('is-highlighted');
+    window.clearTimeout(downloadHighlightTimer);
+    downloadHighlightTimer = window.setTimeout(function () { downloads.classList.remove('is-highlighted'); }, 3000);
+    var selected = downloads.querySelector('input:checked');
+    var platform = selected && selected.id.slice('platform-'.length);
+    var card = platform && downloads.querySelector('.platform-' + platform + ' a[data-download]');
+    if (card) card.focus({ preventScroll: true });
   }
   root.querySelectorAll('a[href="#download"]').forEach(function (link) { link.addEventListener('click', showDownloads); });
   function restoreSharedLink() {
@@ -124,6 +132,8 @@
   root.querySelectorAll('[data-download]').forEach(function (link) {
     link.addEventListener('click', function () {
       link.classList.add('is-downloading');
+      var caption = link.querySelector('[data-download-caption]');
+      if (caption) caption.textContent = '已请求下载';
       window.setTimeout(function () { link.classList.remove('is-downloading'); }, 900);
     });
   });
